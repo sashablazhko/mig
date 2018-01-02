@@ -1,0 +1,226 @@
+.sec14 {
+  margin: 0px 0 40px;
+  padding: 40px 0 40px 0;
+
+  &-left{
+
+    &-title{
+      font-family: "PT_Sans-Bold";
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    &-text{
+      color: $text-color;
+      margin-bottom: 27px;
+
+      &-color{
+        color: $main-color;
+      }
+    }
+
+    &-slid{
+
+      &-item{
+
+        &-line{
+          display: flex;
+          -webkit-align-content: center; /* Safari */
+          align-content: center;
+          -webkit-align-items: stretch; /* Safari */
+          align-items: stretch;
+          color: #232323;
+          text-decoration: none;
+
+          &:first-child{
+            margin-bottom: 20px;
+          }
+
+          &:hover{
+            color: #232323;
+            text-decoration: none;
+
+            & .sec14-left-slid-item-line-when{
+              background-color: $main-color;
+
+              &-day{
+                color: $second-color;
+              }
+              &-month,
+              &-year{
+                color: #fff;
+              }
+            }
+            & .sec14-left-slid-item-line-about{
+              background-color: #f1f1f1;
+
+              &-title{
+                color: $main-color;
+              }
+              &-text{
+                color: #232323;
+              }
+
+            }
+          }
+
+          &-when,
+          &-about{
+            //-webkit-flex-shrink: 0; /* Safari */
+            //flex-shrink: 0;
+            //align-self: center;
+          }
+
+          &-when{
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+
+            &-day{
+              font-family: $ff-main-bold;
+              font-size: 30px;
+              line-height: 30px;
+              color: $main-color;
+            }
+          }
+
+          &-about{
+            background-color: $main-color;
+            padding: 20px;
+            color: #fff;
+
+            &-title{
+              font-family: $ff-main-bold;
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+
+        }
+      }
+
+      .slick-prev{
+        top: auto;
+        left: auto;
+        bottom: -45px;
+        right: 45px;
+      }
+      .slick-next {
+        top: auto;
+        left: auto;
+        bottom: -45px;
+        right: 0px;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        font-family: 'FontAwesome';
+        font-size: 30px;
+        line-height: 1;
+        color: $main-color;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        opacity: 1;
+      }
+      .slick-prev:before {
+        content: "\f100";
+      }
+      .slick-next:before {
+        content: "\f101";
+      }
+    }
+
+  }
+
+  &-right{
+
+    &-slid{
+
+      &-item{
+        text-decoration: none;
+        color: inherit;
+
+        &:hover{
+          text-decoration: none;
+          color: inherit;
+
+          & .sec14-right-slid-item-title{
+            color: $main-color;
+          }
+        }
+
+        &-img{
+          height: 219px;
+          @include img-on-bg();
+          position: relative;
+          margin-bottom: 27px;
+
+          &-date{
+            position: absolute;
+            left: 10px;
+            top: 0;
+            background-color: $main-color;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+
+            &-day{
+              font-family: "PT_Sans-Bold";
+              font-size: 30px;
+              line-height: 30px;
+              color: $second-color;
+            }
+          }
+        }
+
+        &-title{
+          font-family: "PT_Sans-Bold";
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+        &-text{
+          color: $text-color;
+        }
+      }
+
+      /* the slides */
+      .slick-slide {
+        margin: 0 15px;
+      }
+      /* the parent */
+      .slick-list {
+        margin: 0 -15px;
+      }
+
+      .slick-prev{
+        top: auto;
+        left: auto;
+        bottom: -40px;
+        right: 45px;
+      }
+      .slick-next {
+        top: auto;
+        left: auto;
+        bottom: -40px;
+        right: 0px;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        font-family: 'FontAwesome';
+        font-size: 30px;
+        line-height: 1;
+        color: $main-color;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        opacity: 1;
+      }
+      .slick-prev:before {
+        content: "\f100";
+      }
+      .slick-next:before {
+        content: "\f101";
+      }
+    }
+  }
+
+}

@@ -1,0 +1,87 @@
+.sec7{
+  margin: 0px;
+  padding: 40px 0 40px 0;
+
+  &-row{
+    height: 291px;
+  }
+
+  &-left{
+    height: 100%;
+  }
+  &-left-img{
+    height: 100%;
+    @include img-on-bg();
+  }
+
+  &-mid{
+
+    &-title{
+      margin-top: 0px;
+      margin-bottom: 15px;
+      color: #000;
+      font-size: 24px;
+      line-height: 1.2;
+      font-family: "PT_Sans-Bold";
+      text-transform: uppercase;
+
+      &-color{
+        color: $main-color;
+      }
+    }
+    &-subtitle{
+      color: $main-color;
+      margin-bottom: 15px;
+    }
+    &-text{
+      color: $text-color;
+      margin-bottom: 21px;
+    }
+    &-quote{
+      text-align: center;
+      font-size: 18px;
+      padding: 27px;
+      background-color: #f1f1f1;
+      font-family: $ff-main-italic;
+    }
+  }
+
+  &-right{
+    height: 100%;
+
+    &-cont{
+      height: 100%;
+      background-color: $second-color;
+      padding: 20px;
+
+      &-title{
+        font-size: 18px;
+        color: rgb(230, 37, 48);
+        font-family: $ff-main-bold;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      &-text{
+        color: #fff;
+        margin-bottom: 12px;
+      }
+      &-btn-link{
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: "PT_Sans-Bold";
+        color: #fff;
+
+        &:hover{
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+
+}

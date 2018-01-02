@@ -1,0 +1,116 @@
+//font-family: 'PT_Sans';
+//font-family: 'PT_Sans-Bold';
+//font-family: 'PT_Sans-Italic';
+$ff-main: 'PT_Sans';
+$ff-main-bold: 'PT_Sans-Bold';
+$ff-main-italic: 'PT_Sans-Italic';
+
+
+$main-color: #e72530;
+$second-color: #fbc719;
+$text-color: #b0b0b0;
+$text-dark: #888888;
+
+@mixin btn(){
+  display: inline-block;
+  padding: 0 27px;
+  background: $main-color;
+  letter-spacing: normal;
+  font-family: $ff-main-bold;
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+}
+@mixin btn-hover{
+  text-decoration: none;
+  background-color: darken($main-color, 10%);
+}
+@mixin img-on-bg{
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+@mixin h2-title{
+  color: #000;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: "PT_Sans-Bold";
+  text-transform: uppercase;
+}
+@mixin transform-on-hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+}
+
+@import "fonts";
+
+body {
+  font-family: $ff-main, sans-serif;
+  //font-size: 1rem;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+input, select, textarea{
+  color: $text-color;
+  font-family: $ff-main;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+
+}
+
+.clearfix {
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@import "header";
+@import "slider";
+@import "sec1";
+@import "sec2";
+@import "sec3";
+@import "sec4";
+@import "sec6";
+@import "sec7";
+@import "sec8";
+@import "sec9";
+@import "sec10";
+@import "sec11";
+@import "sec12";
+@import "sec13";
+@import "sec14";
+@import "sec15";
+@import "sec16";
+@import "sec17";
+@import "sec18";
+
+@import "responsive";

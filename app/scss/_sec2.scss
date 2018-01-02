@@ -1,0 +1,232 @@
+.sec2{
+  margin: 0px;
+  padding: 40px 0 40px 0;
+
+  &-row-item-wrapleft{
+    padding-right: 0;
+  }
+  &-row-item-wrapright{
+    padding-left: 0;
+  }
+  &-row-item{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &-item{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sppb-addon-title{
+    text-align: center;
+  }
+  .sppb-addon-content{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+//  -------------------------
+  &-flex{
+    display: flex;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content: space-between;
+
+    &-item{
+      width: 25%;
+      height: 382px;
+
+      &-img{
+        height: 191px;
+
+        @include img-on-bg();
+
+        &:hover{
+          @include transform-on-hover();
+        }
+      }
+
+      &:first-child,
+      &:nth-child(2){
+
+        .sec2-flex-item-cont{
+          background-color: $main-color;
+          color: #fff;
+
+          &:hover{
+            @include transform-on-hover();
+            background-color: darken($main-color, 10%);
+          }
+
+          & .sec2-flex-item-cont-title{
+            color: $second-color;
+          }
+          & .sec2-flex-item-cont-btn{
+
+            &-link{
+              color: #ffffff;
+
+              &:hover{
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(3),
+      &:nth-child(4){
+
+        .sec2-flex-item-cont{
+          background-color: #f1f1f1;
+          color: #000;
+
+          &:hover{
+            @include transform-on-hover();
+            background-color: darken(#f1f1f1, 5%);
+          }
+
+          & .sec2-flex-item-cont-title{
+            color: $main-color;
+          }
+          & .sec2-flex-item-cont-btn{
+
+            &-link{
+              color: $main-color;
+
+              &:hover{
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+
+      &-cont{
+        height: 191px;
+        padding: 27px 20px;
+
+        &--secondcolor{
+          background-color: #f1f1f1;
+          color: #000;
+
+          &:hover{
+            @include transform-on-hover();
+            background-color: darken(#f1f1f1, 10%);
+          }
+
+          & .sec2-flex-item-cont-title{
+            color: $main-color;
+          }
+          & .sec2-flex-item-cont-btn{
+
+            &-link{
+              color: $main-color;
+
+              &:hover{
+                color: $main-color;
+              }
+            }
+          }
+        }
+
+        &-title{
+          font-size: 18px;
+          line-height: 18px;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          font-family: $ff-main-bold;
+        }
+
+        &-text{
+          margin-bottom: 10px;
+        }
+
+        &-btn{
+
+          &-link{
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            margin: 0;
+            text-transform: uppercase;
+            font-family: "PT_Sans-Bold";
+
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+//  ------
+  &-flex--five{
+
+    & .sec2-flex-item {
+      width: 20%;
+
+      .sec2-flex-item-cont-text {
+        margin-bottom: 10px;
+        overflow: hidden;
+        height: 72px;
+      }
+
+
+      &:nth-child(odd){
+
+        .sec2-flex-item-cont{
+          background-color: $main-color;
+          color: #fff;
+
+          &:hover{
+            @include transform-on-hover();
+            background-color:darken($main-color, 5%);
+          }
+
+          & .sec2-flex-item-cont-title{
+            color: $second-color;
+          }
+          & .sec2-flex-item-cont-btn{
+
+            &-link{
+              color: #fff;
+
+              &:hover{
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(even){
+
+        .sec2-flex-item-cont{
+          background-color: #f1f1f1;
+          color: #000;
+
+          &:hover{
+            @include transform-on-hover();
+            background-color: darken(#f1f1f1, 5%);
+          }
+
+          & .sec2-flex-item-cont-title{
+            color: $main-color;
+          }
+          & .sec2-flex-item-cont-btn{
+
+            &-link{
+              color: $main-color;
+
+              &:hover{
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,166 @@
+.sec15 {
+  margin: 40px 0;
+  padding: 40px 0 40px 0;
+  @include img-on-bg();
+
+  .sppb-addon-title,
+  .sppb-addon-content{
+    text-align: left;
+
+    &-color{
+      color: $main-color;
+    }
+  }
+
+  &-titleright{
+    color: #fff;
+    font-size: 18px;
+    font-family: $ff-main-italic;
+    text-align: center;
+  }
+
+  &-cont{
+    background-color: #fff;
+    display: table;
+    width: 100%;
+
+    &-left{
+      display: table-cell;
+      vertical-align: top;
+      background-color: #f1f1f1;
+      width: 360px;
+      padding-top: 80px;
+
+      &-list{
+        margin: 0;
+        padding: 0;
+
+        &-item{
+
+          &-link{
+            text-decoration: none !important;
+            color: #232323;
+            display: block;
+            padding: 15px 15px 15px 70px;
+
+            &:visited,
+            &:focus,
+            &:active{
+              text-decoration: none !important;
+            }
+
+            &:hover,
+            &--active{
+              text-decoration: none !important;
+              color: #232323;
+              background-color: $main-color;
+
+              & .sec15-cont-left-list-item-link-title,
+              & .sec15-cont-left-list-item-link-text{
+                color: #fff;
+              }
+              & .sec15-cont-left-list-item-link-title:before{
+                color: $second-color;
+              }
+            }
+
+            &-title{
+              font-family: "PT_Sans-Bold";
+              font-size: 18px;
+              line-height: 30px;
+              color: $main-color;
+              text-transform: uppercase;
+              position: relative;
+
+              &:before{
+                //content: '\f0c0';
+                display: inline-block;
+                font-size: 24px;
+                font-family: 'FontAwesome';
+                position: absolute;
+                left: -46px;
+                top: 3px;
+              }
+            }
+            &-text{
+
+            }
+          }
+
+          &:first-child .sec15-cont-left-list-item-link-title:before{
+            content: '\f0c0';
+          }
+          &:nth-child(2) .sec15-cont-left-list-item-link-title:before{
+            content: '\f2c3';
+          }
+          &:nth-child(3) .sec15-cont-left-list-item-link-title:before{
+            content: '\f234';
+          }
+          &:nth-child(4) .sec15-cont-left-list-item-link-title:before{
+            content: '\f080';
+          }
+
+          &-mobile{
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-right{
+      display: none;
+      vertical-align: top;
+      padding: 37px 15px 15px;
+
+      &--active{
+        display: table-cell;
+      }
+
+      & .sppb-addon-title{
+        padding-left: 15px;
+      }
+
+      &-row{
+        height: 100%;
+        display: table;
+
+        &-item-wrap{
+          display: table-cell;
+          //height: 100%;
+          width: 250px;
+          margin-right: 28px;
+          padding: 0 15px;
+        }
+        &-item{
+
+          &-img{
+            height: 150px;
+            @include img-on-bg();
+            margin-bottom: 15px;
+          }
+          &-text{
+            color: $text-color;
+            margin-bottom: 27px;
+          }
+          & .newstyle7{
+            color: $text-color;
+            list-style-type: none;
+            padding: 0px;
+            margin: 0 0 27px 0;
+
+            & li:before {
+              content: "\f00c";
+              font-family: 'Fontawesome';
+              position: relative;
+              left: -15px;
+              color: $main-color;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+}

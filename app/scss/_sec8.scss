@@ -1,0 +1,261 @@
+//@-ms-keyframes sec8-left-l1 {
+//  0% { -ms-transform: rotate(-5deg); }
+//  50% { -ms-transform: rotate(5deg); }
+//  100% { -ms-transform: rotate(-5deg); }
+//}
+//@-moz-keyframes sec8-left-l1 {
+//  0% { -moz-transform: rotate(-5deg); }
+//  50% { -moz-transform: rotate(5deg); }
+//  100% { -moz-transform: rotate(-5deg); }
+//}
+//@-webkit-keyframes sec8-left-l1 {
+//  0% { -webkit-transform: rotate(-5deg); }
+//  50% { -webkit-transform: rotate(5deg); }
+//  100% { -webkit-transform: rotate(-5deg); }
+//}
+//@keyframes sec8-left-l1 {
+//  0% { transform:rotate(-5deg); }
+//  50% { transform:rotate(5deg); }
+//  100% { transform:rotate(-5deg); }
+//}
+@-ms-keyframes sec8-left-l1 {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+}
+@-moz-keyframes sec8-left-l1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes sec8-left-l1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sec8-left-l1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sec8{
+  margin: 0px;
+  padding: 40px 0 40px 0;
+
+  &-item{
+
+    &-head{
+      background-color: $main-color;
+      height: 92px;
+      padding-top: 23px;
+      text-align: center;
+
+      &-title{
+        font-size: 18px;
+        font-family: $ff-main-bold;
+        color: $second-color;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      &-subtitle{
+        font-size: 13px;
+        color: #fff;
+      }
+    }
+
+    &-cont{
+      background-color: #f1f1f1;
+      padding-left: 30px;
+      padding-top: 30px;
+      float: none;
+
+      ul{
+        color: $text-color;
+        list-style-type: none;
+        padding: 0 0 46px 0;
+        margin-bottom: 0;
+      }
+      li{
+        line-height: 30px;
+      }
+      br{
+        line-height: 30px;
+      }
+      ul.newstyle7 li:before {
+        content: "\f00c";
+        font-family: 'Fontawesome';
+        position: relative;
+        left: -15px;
+        color: $second-color;
+      }
+    }
+
+    &-foot{
+      height: 65px;
+      background-color: $main-color;
+      text-align: center;
+      padding-top: 17px;
+
+      &-btn{
+        display: inline-block;
+        padding: 0 27px;
+        background-color: #f1f1f1;
+        letter-spacing: normal;
+        font-family: $ff-main-bold;
+        font-size: 14px;
+        height: 48px;
+        line-height: 48px;
+        border: 1px solid #cacaca;
+        -webkit-border-radius: 6px 6px 0 0;
+        border-radius: 6px 6px 0 0;
+        color: $main-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        vertical-align: middle;
+
+        &:hover{
+          color: #fff;
+          text-decoration: none;
+          background-color: darken($main-color, 10%);
+        }
+      }
+    }
+
+  }
+
+  .sec8-bg{
+    position: relative;
+
+    &-left{
+      position: absolute;
+      width: 50%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 353px;
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: center left;
+      z-index: -10;
+
+      &-l1{
+        width: 120px;
+        height: 2px;
+        background-image: url('../img/sec8-left1.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: center left;
+        z-index: -9;
+        position: absolute;
+        left: 154px;
+        top: 175px;
+
+        -webkit-animation-name: sec8-left-l1;
+        -webkit-animation-duration: 3000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: sec8-left-l1;
+        -moz-animation-duration: 3000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: sec8-left-l1;
+        -ms-animation-duration: 3000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+        animation-name: sec8-left-l1;
+        animation-duration: 3000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      &-l2{
+        width: 240px;
+        height: 23px;
+        background-image: url('../img/sec8-left2.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: center left;
+        z-index: -9;
+        position: absolute;
+        left: 93px;
+        top: 164px;
+
+        -webkit-animation-name: sec8-left-l1;
+        -webkit-animation-duration: 6000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: sec8-left-l1;
+        -moz-animation-duration: 6000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: sec8-left-l1;
+        -ms-animation-duration: 6000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+        animation-name: sec8-left-l1;
+        animation-duration: 6000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      &-l3{
+        width: 186px;
+        height: 24px;
+        background-image: url('../img/sec8-left3.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: center left;
+        z-index: -9;
+        position: absolute;
+        left: 120px;
+        top: 164px;
+
+        -webkit-animation-name: sec8-left-l1;
+        -webkit-animation-duration: 12000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: sec8-left-l1;
+        -moz-animation-duration: 12000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: sec8-left-l1;
+        -ms-animation-duration: 12000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+        animation-name: sec8-left-l1;
+        animation-duration: 12000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+
+    &-right{
+      position: absolute;
+      width: 50%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: center right;
+      z-index: -1;
+    }
+  }
+}
