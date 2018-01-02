@@ -198,8 +198,16 @@ jQuery(function($) {
       $(element).removeClass('sec6-tab--active');
     });
     $(this).addClass('sec6-tab--active');
-  });
 
+    var clickId = $(this).data('id');
+    $('.sec6-cont').each(function(indx, element){
+      if (indx == clickId)
+        $(element).addClass('sec6-cont--active');
+      else {
+        $(element).removeClass('sec6-cont--active');
+      }
+    });
+  });
 //  END sec6 переключение вкладок desktop
 
 //  sec15 переключение вкладок desktop
@@ -255,11 +263,19 @@ jQuery(function($) {
       "opacity":"0"
     });
   });
+  $('.label-tooltip2-text2-close22').on('click', function () {
+    $('.label-tooltip2-text2-wrap22').css({
+      "visibility":"hidden",
+      "opacity":"0"
+    });
+  });
 
 //  calculator
 
   $('input[name="salary"]').val(currentSalary);
+  $('input[name="salary2"]').val(currentSalary2);
   calculatePercent();
+  calculatePercent2();
 
   function changeSalary() {
     amount = $('input[name="amount"]').val();
@@ -294,6 +310,39 @@ jQuery(function($) {
     }
   }
 
+  function changeSalary2() {
+    amount2 = $('input[name="amount2"]').val();
+    if (tax2 == 1 && rate2 == 3 && region2 == 1) {
+      currentSalary2 = MPOTMoskow2 * 0.25 * amount2;
+      minSalary2 = currentSalary2;
+      $('input[name="salary2"]').val(currentSalary2);
+    } else if (tax2 == 1 && rate2 == 3 && region2 == 2) {
+      currentSalary2 = MPOTObl2 * 0.25 * amount2;
+      minSalary2 = currentSalary2;
+      $('input[name="salary2"]').val(currentSalary2);
+    } else if (tax2 == 1 && rate2 == 2 && region2 == 1) {
+      currentSalary2 = MPOTMoskow2 * 0.5 * amount2;
+      minSalary2 = currentSalary2;
+      $('input[name="salary2"]').val(currentSalary2);
+    } else if (tax2 == 1 && rate2 == 2 && region2 == 2) {
+      currentSalary2 = MPOTObl2 * 0.5 * amount2;
+      minSalary2 = currentSalary2;
+      $('input[name="salary2"]').val(currentSalary2);
+    } else if (tax2 == 1 && rate2 == 1 && region2 == 1) {
+      currentSalary2 = MPOTMoskow2 * amount2;
+      minSalary2 = currentSalary2;
+      $('input[name="salary2"]').val(currentSalary2);
+    } else if (tax2 == 1 && rate2 == 1 && region2 == 2) {
+      currentSalary2 = MPOTObl2 * amount2;
+      minSalary2 = currentSalary2;
+      $('input[name="salary2"]').val(currentSalary2);
+    } else if (tax2 == 2) {
+      currentSalary2 = salaryYCHDedault2;
+      minSalary2 = 1;
+      $('input[name="salary2"]').val(currentSalary2);
+    }
+  }
+
   $('input[name="radio-tax"]').on('click', function(e) { //'click change'
     tax = $('input[name="radio-tax"]:checked').val();
     changeSalary();
@@ -305,11 +354,27 @@ jQuery(function($) {
     }
     calculatePercent();
   });
+  $('input[name="radio-tax2"]').on('click', function(e) { //'click change'
+    tax2 = $('input[name="radio-tax2"]:checked').val();
+    changeSalary2();
+    if (tax2 == 1) {
+      $('input[name="radio-rate2"]').attr('disabled', false);
+    } else {
+      $('input[name="radio-rate2"]').first().prop('checked', true);
+      $('input[name="radio-rate2"]').attr('disabled', true);
+    }
+    calculatePercent2();
+  });
 
   $('input[name="radio-national"]').on('click', function(e) {
     national = $('input[name="radio-national"]:checked').val();
     changeSalary();
     calculatePercent();
+  });
+  $('input[name="radio-national2"]').on('click', function(e) {
+    national2 = $('input[name="radio-national2"]:checked').val();
+    changeSalary2();
+    calculatePercent2();
   });
 
   $('input[name="radio-type"]').on('click', function(e) {
@@ -317,11 +382,21 @@ jQuery(function($) {
     changeSalary();
     calculatePercent();
   });
+  $('input[name="radio-type2"]').on('click', function(e) {
+    type2 = $('input[name="radio-type2"]:checked').val();
+    changeSalary2();
+    calculatePercent2();
+  });
 
   $('input[name="radio-region"]').on('click', function(e) {
     region = $('input[name="radio-region"]:checked').val();
     changeSalary();
     calculatePercent();
+  });
+  $('input[name="radio-region2"]').on('click', function(e) {
+    region2 = $('input[name="radio-region2"]:checked').val();
+    changeSalary2();
+    calculatePercent2();
   });
 
   $('input[name="radio-rate"]').on('click', function(e) {
@@ -329,8 +404,13 @@ jQuery(function($) {
     changeSalary();
     calculatePercent();
   });
+  $('input[name="radio-rate2"]').on('click', function(e) {
+    rate2 = $('input[name="radio-rate2"]:checked').val();
+    changeSalary2();
+    calculatePercent2();
+  });
 
-  //когда меняется поле amount
+  //когда меняется поле amount tab1
   var typingTimerAmount;                //timer identifier
   var doneTypingIntervalAmount = 1000;  //time in ms, 1 second for example
   var $inputAmount = $('#amount');
@@ -360,16 +440,47 @@ jQuery(function($) {
     } else {
       amountCoef = 0.7;
     }
-
     changeSalary();
-
     calculatePercent();
   }
+  //когда меняется поле amount tab2
+  var typingTimerAmount2;                //timer identifier
+  var doneTypingIntervalAmount2 = 1000;  //time in ms, 1 second for example
+  var $inputAmount2 = $('#amount2');
 
-  //когда меняется поле salary
+//on keyup, start the countdown
+  $inputAmount2.on('keyup', function () {
+    clearTimeout(typingTimerAmount2);
+    typingTimerAmount2 = setTimeout(doneTypingAmount2, doneTypingIntervalAmount2);
+  });
+
+//on keydown, clear the countdown
+  $inputAmount2.on('keydown', function () {
+    clearTimeout(typingTimerAmount2);
+  });
+
+//user is "finished typing," do something
+  function doneTypingAmount2 () {
+    amount2 = $('input[name="amount2"]').val();
+    amountEl2 = $('input[name="amount2"]');
+    if (amount2 < 1) {
+      amountEl2.val(1);
+      amountCoef2 = 1;
+    } else if (amount2 >= 1 && amount2 <= 10) {
+      amountCoef2 = 1;
+    } else if (amount2 >= 11 && amount2 <= 49) {
+      amountCoef2 = 0.9;
+    } else {
+      amountCoef2 = 0.7;
+    }
+    changeSalary2();
+    calculatePercent2();
+  }
+
+  //когда меняется поле salary tab1
   //setup before functions
   var typingTimer;                //timer identifier
-  var doneTypingInterval = 2000;  //time in ms, 2 second for example
+  var doneTypingInterval = 1000;  //time in ms, 1 second for example
   var $input = $('#salary');
 
 //on keyup, start the countdown
@@ -394,12 +505,44 @@ jQuery(function($) {
         "visibility":"visible",
         "opacity":"1"
       });
-      console.log('cant be less than MPOT');
+      // console.log('cant be less than MPOT');
     } else {
       calculatePercent();
-
     }
 
+  }
+  //когда меняется поле salary tab2
+  //setup before functions
+  var typingTimer2;                //timer identifier
+  var doneTypingInterval2 = 1000;  //time in ms, 1 second for example
+  var $input2 = $('#salary2');
+
+//on keyup, start the countdown
+  $input2.on('keyup', function () {
+    clearTimeout(typingTimer2);
+    typingTimer2 = setTimeout(doneTyping2, doneTypingInterval2);
+  });
+
+//on keydown, clear the countdown
+  $input2.on('keydown', function () {
+    clearTimeout(typingTimer2);
+  });
+
+//user is "finished typing," do something
+  function doneTyping2 () {
+    currentSalary2 = $('input[name="salary2"]').val();
+    if (currentSalary2 < minSalary2) {
+      currentSalary2 = minSalary2;
+      changeSalary2();
+      calculatePercent2();
+      $('.label-tooltip2-text2-wrap22').css({
+        "visibility":"visible",
+        "opacity":"1"
+      });
+      // console.log('cant be less than MPOT');
+    } else {
+      calculatePercent2();
+    }
 
   }
 
@@ -416,14 +559,29 @@ jQuery(function($) {
 // '1-2-1-2' (ОСН) - НЕ ЕАЭС   - Гражданско-правовой договр - (Московская область)
 // '1-1-2-2' (ОСН) - ЕАЭС (РФ) - Трудовой договор           - (Московская область)
 // '1-2-2-2' (ОСН) - НЕ ЕАЭС   - Трудовой договор           - (Московская область)
+// '2-1-1-1' (УСН) - ЕАЭС (РФ) - Гражданско-правовой договр - (МОСКВА)
+// '2-2-1-1' (УСН) - НЕ ЕАЭС   - Гражданско-правовой договр - (МОСКВА)
+// '2-1-2-1' (УСН) - ЕАЭС (РФ) - Трудовой договор           - (МОСКВА)
+// '2-2-2-1' (УСН) - НЕ ЕАЭС   - Трудовой договор           - (МОСКВА)
+// '2-1-1-2' (УСН) - ЕАЭС (РФ) - Гражданско-правовой договр - (Московская область)
+// '2-2-1-2' (УСН) - НЕ ЕАЭС   - Гражданско-правовой договр - (Московская область)
+// '2-1-2-2' (УСН) - ЕАЭС (РФ) - Трудовой договор           - (Московская область)
+// '2-2-2-2' (УСН) - НЕ ЕАЭС   - Трудовой договор           - (Московская область)
 var MPOTMoskow = 18742;
+var MPOTMoskow2 = 18742;
 var MPOTObl = 13750;
+var MPOTObl2 = 13750;
 var salaryYCHDedault = 5000;
+var salaryYCHDedault2 = 5000;
 var priceMIG = 2000;
 var economyFOT = 5000;
 var currentSalary = MPOTMoskow;
+var currentSalary2 = MPOTMoskow2;
 var minSalary = MPOTMoskow;
+var minSalary2 = MPOTMoskow;
 var amountCoef = 1;
+var amountCoef2 = 1;
+
 var percent = {
   '1-1-1-1': {
    'v1': 0.13,
@@ -612,6 +770,15 @@ var rate = 1; //Ставка сотрудника: 1 0.5 0.25
 var amount = 1; //количество сотрудников:
 var salary = 1; //Заработная плата:
 
+// tab2
+var tax2 = 1; //Система налогообложения: (ОСН) (УСН)
+var national2 = 1; //Гражданство сотрудника: ЕАЭС НЕ ЕАЭС РФ
+var type2 = 1; //Вид договора: Гражданско-правовой договор Трудовой договор
+var region2 = 1; //Местоположение объекта: Москва Московская область
+var rate2 = 1; //Ставка сотрудника: 1 0.5 0.25
+var amount2 = 1; //количество сотрудников:
+var salary2 = 1; //Заработная плата:
+
 function validate(evt) {
   var theEvent = evt || window.event;
   var key = theEvent.keyCode || theEvent.which;
@@ -624,13 +791,13 @@ function validate(evt) {
 }
 
 function calculatePercent() {
-  // console.log(tax = $('input[name="radio-tax"]:checked').val());
-  // console.log(national = $('input[name="radio-national"]:checked').val());
-  // console.log(type = $('input[name="radio-type"]:checked').val());
-  // console.log(region = $('input[name="radio-region"]:checked').val());
-  // console.log(rate = $('input[name="radio-rate"]:checked').val());
-  // console.log(amount = $('input[name="amount"]').val());
-  // console.log(salary = $('input[name="salary"]').val());
+  tax = $('input[name="radio-tax"]:checked').val();
+  national = $('input[name="radio-national"]:checked').val();
+  type = $('input[name="radio-type"]:checked').val();
+  region = $('input[name="radio-region"]:checked').val();
+  rate = $('input[name="radio-rate"]:checked').val();
+  amount = $('input[name="amount"]').val();
+  salary = $('input[name="salary"]').val();
 
   var key = tax+'-'+national+'-'+type+'-'+region;
 
@@ -740,7 +907,134 @@ function calculatePercent() {
 
 }
 
+function calculatePercent2() {
+  tax2 = $('input[name="radio-tax2"]:checked').val();
+  national2 = $('input[name="radio-national2"]:checked').val();
+  type2 = $('input[name="radio-type2"]:checked').val();
+  region2 = $('input[name="radio-region2"]:checked').val();
+  rate2 = $('input[name="radio-rate2"]:checked').val();
+  amount2 = $('input[name="amount2"]').val();
+  salary2 = $('input[name="salary2"]').val();
+
+  var key2 = tax2+'-'+national2+'-'+type2+'-'+region2;
+
+  var one2 = Math.round(currentSalary2 - (currentSalary2 * percent[key2].v1));
+
+  var two2 = Math.round((currentSalary2 * percent[key2].v2)+(currentSalary2 * percent[key2].v3)+(currentSalary2 * percent[key2].v4)+(currentSalary2 * percent[key2].v5));
+
+  var threeTmp2 = one2 + (currentSalary2 * percent[key2].v1)+(currentSalary2 * percent[key2].v2)+(currentSalary2 * percent[key2].v3)+(currentSalary2 * percent[key2].v4)+(currentSalary2 * percent[key2].v5);
+  var three2 = Math.round(threeTmp2 + threeTmp2 * percent[key2].v6);
+
+  var four2 = Math.round(percent[key2].v7 * amountCoef2);
+
+  var five2, six2;
+  var one1002, two1002, three1002, four1002, five1002, six1002;
+  if (tax2 == 1) {
+    five2 = Math.round((threeTmp2 + percent[key2].v7 * amountCoef2) * percent[key2].v10 + (threeTmp2 + percent[key2].v7 * amountCoef2) * percent[key2].v9 - percent[key2].v7* amountCoef2 * percent[key2].v8 - percent[key2].v7 * amountCoef2);
+
+    six2 = Math.round((five2 / three2) * 100);
+
+    one1002 = Math.round(currentSalary2);
+    two1002 = Math.round(threeTmp2 * percent[key2].v6 + percent[key2].v7* amountCoef2 * percent[key2].v8);
+    three1002 = Math.round(three2 + percent[key2].v7* amountCoef2 + percent[key2].v7* amountCoef2 * percent[key2].v8);
+    four1002 = Math.round(percent[key2].v7* amountCoef2 + percent[key2].v7* amountCoef2 * percent[key2].v8);
+    five1002 = five2;
+    six1002 = six2;
+
+  } else {
+    five2 = 0;
+
+    six2 = Math.round(100 - ((three2 + four2) / (three2 + percent[key2].v11)) * 100);
+
+    one1002 = +currentSalary2 + currentSalary2 * percent[key2].v1;
+    two1002 = two2 + currentSalary2 * percent[key2].v1;
+    three1002 = three2 + percent[key2].v7* amountCoef2;
+    four1002 = percent[key2].v7* amountCoef2;
+    five1002 = 1;
+    six1002 = six2;
+
+  }
+
+  // console.log('One: ' + one2 + ' :: ' + one1002);
+  // console.log('Two: ' + two2 + ' :: ' + two1002);
+  // console.log('Three: ' + three2 + ' :: ' + three1002);
+  // console.log('Four: ' + four2 + ' :: ' + four1002);
+  // console.log('Five: ' + five2 + ' :: ' + five1002);
+  // console.log('Six: ' + six2 + ' :: ' + six1002);
+
+  var onePercent2;
+  if (one2 / one1002 > 1){
+    onePercent2 = 1;
+  } else {
+    onePercent2 = one2 / one1002;
+  }
+  onePercent2 = onePercent2.toFixed(2);
+  $('#one-sum2').text(one2);
+  circle12.animate(onePercent2);
+
+  var twoPercent2;
+  if (two2 / two1002 > 1){
+    twoPercent2 = 1;
+  } else {
+    twoPercent2 = two2 / two1002;
+  }
+  twoPercent2 = twoPercent2.toFixed(2);
+  $('#two-sum2').text(two2);
+  circle22.animate(twoPercent2);
+
+  var threePercent2;
+  if (three2 / three1002 > 1){
+    threePercent2 = 1;
+  } else {
+    threePercent2 = three2 / three1002;
+  }
+  threePercent2 = threePercent2.toFixed(2);
+  $('#three-sum2').text(three2);
+  circle32.animate(threePercent2);
+
+  var fourPercent2;
+  if (four2 / four1002 > 1){
+    fourPercent2 = 1;
+  } else {
+    fourPercent2 = four2 / four1002;
+  }
+  fourPercent2 = fourPercent2.toFixed(2);
+  $('#four-sum2').text(four2);
+  line12.animate(fourPercent2);
+
+  var fivePercent2;
+  if (five2 / five1002 > 1){
+    fivePercent2 = 1;
+  } else {
+    fivePercent2 = five2 / five1002;
+  }
+  fivePercent2 = fivePercent2.toFixed(2);
+  $('#five-sum2').text(five2);
+  line22.animate(fivePercent2);
+
+  var sixPercent2;
+  if (six2 / six1002 > 1){
+    sixPercent2 = 1;
+  } else {
+    sixPercent2 = six2 / six1002;
+  }
+  sixPercent2 = sixPercent2.toFixed(2);
+  $('#six-sum2').text(six2);
+  line32.animate(sixPercent2);
+
+}
+
 var circle1 = new ProgressBar.Circle('#progress1', {
+  strokeWidth: 4,
+  color: '#e72530',
+  trailColor: '#fff',
+  duration: 3000,
+  easing: 'easeInOut',
+  text: {
+    value: 'руб'
+  }
+});
+var circle12 = new ProgressBar.Circle('#progress12', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
@@ -760,7 +1054,27 @@ var circle2 = new ProgressBar.Circle('#progress2', {
     value: 'руб'
   }
 });
+var circle22 = new ProgressBar.Circle('#progress22', {
+  strokeWidth: 4,
+  color: '#e72530',
+  trailColor: '#fff',
+  duration: 3000,
+  easing: 'easeInOut',
+  text: {
+    value: 'руб'
+  }
+});
 var circle3 = new ProgressBar.Circle('#progress3', {
+  strokeWidth: 4,
+  color: '#e72530',
+  trailColor: '#fff',
+  duration: 3000,
+  easing: 'easeInOut',
+  text: {
+    value: 'руб'
+  }
+});
+var circle32 = new ProgressBar.Circle('#progress32', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
@@ -779,6 +1093,15 @@ var line1 = new ProgressBar.Line('#progress4', {
   trailWidth: 4,
   svgStyle: {width: '100%', height: '18px'}
 });
+var line12 = new ProgressBar.Line('#progress42', {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#e72530',
+  trailColor: '#fff',
+  trailWidth: 4,
+  svgStyle: {width: '100%', height: '18px'}
+});
 var line2 = new ProgressBar.Line('#progress5', {
   strokeWidth: 4,
   easing: 'easeInOut',
@@ -788,7 +1111,25 @@ var line2 = new ProgressBar.Line('#progress5', {
   trailWidth: 4,
   svgStyle: {width: '100%', height: '18px'}
 });
+var line22 = new ProgressBar.Line('#progress52', {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#e72530',
+  trailColor: '#fff',
+  trailWidth: 4,
+  svgStyle: {width: '100%', height: '18px'}
+});
 var line3 = new ProgressBar.Line('#progress6', {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#e72530',
+  trailColor: '#fff',
+  trailWidth: 4,
+  svgStyle: {width: '100%', height: '18px'}
+});
+var line32 = new ProgressBar.Line('#progress62', {
   strokeWidth: 4,
   easing: 'easeInOut',
   duration: 1400,

@@ -1,0 +1,247 @@
+.footer{
+  margin: 40px 0 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  
+  &-about{
+    background-color: #cacaca;
+    text-align: center;
+    padding: 85px 15px;
+
+    &-logo{
+      padding: 0 25px;
+
+      &-link{
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 35px;
+
+        &-img{
+          width: 100%;
+        }
+      }
+    }
+
+    &-text{
+      font-family: $ff-main-italic;
+      color: rgb(136,136,136);
+      margin-bottom: 35px;
+    }
+
+    &-social{
+
+      &-link{
+        text-decoration: none;
+        color: rgb(136,136,136);
+        font-size: 18px;
+        margin-right: 10px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &:visited,
+        &:focus,
+        &:active{
+          text-decoration: none !important;
+          color: rgb(136,136,136);
+        }
+
+        &:hover{
+          text-decoration: none;
+          color: #f1f1f1;
+        }
+      }
+    }
+  }
+
+  &-contact{
+    padding-top: 31px;
+
+    &-title{
+      color: #000;
+      font-family: $ff-main-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    &-list{
+      color: rgb(136,136,136);
+      padding: 0;
+
+      &-item{
+        display: block;
+        border-bottom: 1px solid $text-color;
+        position: relative;
+        padding: 20px 0 20px 23px;
+
+        &:last-child{
+          border-bottom: none;
+        }
+        &:first-child:before{
+          content: "\f041";
+          font-family: 'FontAwesome';
+          position: absolute;
+          left: 0;
+          color: $main-color;
+        }
+        &:nth-child(2):before{
+          content: "\f0f6";
+          font-family: 'FontAwesome';
+          position: absolute;
+          left: 0;
+          color: $main-color;
+        }
+
+        &-link{
+          display: block;
+          color: $text-color;
+          text-decoration: none;
+
+          &:first-child:before{
+            content: "\f095";
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: 0;
+            color: $main-color;
+          }
+          &:nth-child(2):before{
+            content: "\f0e0";
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: 0;
+            color: $main-color;
+          }
+
+          &:visited,
+          &:focus,
+          &:active{
+            text-decoration: none !important;
+            color: rgb(136,136,136);
+          }
+
+          &:hover{
+            text-decoration: none !important;
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+
+  &-info{
+    padding-top: 31px;
+
+    &-title{
+      color: #000;
+      font-family: $ff-main-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 19px;
+
+      &-color{
+        color: $main-color;
+      }
+    }
+
+    &-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    &-item{
+      display: block;
+      -webkit-transition: 300ms;
+      transition: 300ms;
+      position: relative;
+
+    }
+    &-link{
+      display: block;
+      padding: 6px 0;
+      position: relative;
+      color: $text-color;
+
+      &:before{
+        font-family: 'FontAwesome';
+        content: "\f058";
+        margin-right: 8px;
+        color: $main-color;
+      }
+
+      &:hover{
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+
+  &-social{
+    padding-top: 31px;
+
+    &-title{
+      color: #000;
+      font-family: $ff-main-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+
+      &-color{
+        color: $main-color;
+      }
+    }
+
+  //
+    &-list{
+      color: rgb(136,136,136);
+      padding: 0;
+
+      &-item{
+        display: block;
+        border-bottom: 1px solid $text-color;
+        position: relative;
+        padding: 25px 0 25px 55px;
+
+        &:last-child{
+          border-bottom: none;
+        }
+        &:before{
+          content: "";
+          position: absolute;
+          top: 18px;
+          left: 0;
+          color: $main-color;
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          background-image: url('../img/foot-soc.png');
+        }
+
+        &-readmore-btn{
+          color: $text-color;
+          text-decoration: none;
+
+          &:visited,
+          &:focus,
+          &:active{
+            text-decoration: none !important;
+            color: rgb(136,136,136);
+          }
+
+          &:hover{
+            text-decoration: none !important;
+            color: $main-color;
+          }
+
+          &-link{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  //
+
+  }
+
+}
