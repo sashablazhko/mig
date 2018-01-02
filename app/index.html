@@ -17,6 +17,69 @@
 <body>
 
 <div class="body-innerwrapper">
+
+<!--MODAL-->
+	<div class="modal fade migmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="row">
+					<div class="col-md-4">1</div>
+					<div class="col-md-4">
+						<div class="migmodal-cont">
+							<div class="migmodal-cont-title">
+								СПАСИБО<span class="migmodal-cont-title-color"> ЗА ОБРАЩЕНИЕ!</span>
+							</div>
+							<div class="migmodal-cont-text">
+								Наши специалисты свяжутся с Вами
+								в ближайшее время.*
+							</div>
+							<div class="migmodal-cont-btn">
+								<a href="#" class="migmodal-cont-btn-link" data-dismiss="modal">Вернуться на главную</a>
+							</div>
+							<div class="migmodal-cont-wait">
+								Максимальное время ожидания - 3 часа.
+							</div>
+							<div class="migmodal-cont-foot">
+
+								<div class="migmodal-cont-foot-title">
+									МЫ В СОЦСЕТЯХ
+								</div>
+								<div class="migmodal-cont-foot-text">
+									публикуем самую полезную информацию от ЦенТрМиг
+								</div>
+								<div class="migmodal-cont-foot-social">
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-vk" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-youtube" aria-hidden="true"></i>
+									</a>
+								</div>
+								<div class="migmodal-cont-foot-bg"></div>
+
+							</div>
+						</div>
+						<!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+					</div>
+					<div class="col-md-4">1</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--END MODAL-->
+
 <!--TOP HEADER-->
 	<section id="sp-top-bar">
 		<div class="container">
@@ -215,7 +278,7 @@
 							</div>
 							<div class="content-form">
 								<input type="tel" class="content-form-inp" placeholder="8 (___) ___-__-__">
-								<a href="#"  class="content-form-btn">ОТПРАВИТЬ</a>
+								<a href="#"  class="content-form-btn" data-toggle="modal" data-target=".migmodal">ОТПРАВИТЬ</a>
 							</div>
 							<div class="content-afterform">
 								Введите номер телефона для получения консультации
