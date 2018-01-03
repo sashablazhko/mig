@@ -1,0 +1,28 @@
+.sec4-cont {
+  padding-top: 0px;
+}
+
+//.sec4-setbg {
+//  position: relative;
+//}
+.sec4-img-bg {
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  top: 40px;
+  height: calc(100% - 80px);
+}
+.sec4-cont-block-name,
+.sec4-cont-block-phone{
+  margin-bottom: 15px;
+}
+.sec4-img img {
+  margin-top: 15px;
+}
+.sec6-foot {
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+.sec6-foot-itemline{
+  margin-top: $mobile-margin;
+}

@@ -1,4 +1,4 @@
-@media (min-width: 992px){
+@media (min-width: 1200px){
   .modal-lg {
     width: 1140px;
   }
@@ -10,7 +10,27 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 993px){
-
+  @import "response/modal_1200";
+  @import "response/header_1200";
+  @import "response/sec1_1200";
+  @import "response/sec2_1200";
+  @import "response/sec3_1200";
+  @import "response/sec4_1200";
+  @import "response/sec5_1200";
+  @import "response/sec6_1200";
+  @import "response/sec7_1200";
+  @import "response/sec8_1200";
+  @import "response/sec9_1200";
+  @import "response/sec10_1200";
+  @import "response/sec11_1200";
+  @import "response/sec12_1200";
+  @import "response/sec13_1200";
+  @import "response/sec14_1200";
+  @import "response/sec15_1200";
+  @import "response/sec16_1200";
+  @import "response/sec17_1200";
+  @import "response/sec18_1200";
+  @import "response/footer_1200";
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px){
@@ -22,48 +42,28 @@
     display:block;
   }
 
-//  sec15
-  .sec15-cont-right--active{
-    display: none;
-  }
-
-  .sec15-cont-left-list-item{
-    border-bottom: 1px solid $text-color;
-
-    &-mobile{
-      display: none;
-
-      &--active{
-        display: block;
-      }
-
-      &-img{
-        height: 40vw;
-        @include img-on-bg();
-        margin-bottom: 20px;
-      }
-      &-text{
-        color: $text-color;
-        margin-bottom: 20px;
-      }
-      & .newstyle7{
-        color: $text-color;
-        list-style-type: none;
-        padding: 0px 0 0 15px;
-        margin: 0 0 20px 0;
-
-        & li:before {
-          content: "\f00c";
-          font-family: 'Fontawesome';
-          position: relative;
-          left: -15px;
-          color: $main-color;
-        }
-      }
-
-    }
-  }
-//  END sec15
+  @import "response/modal_992";
+  @import "response/header_992";
+  @import "response/slider_992";
+  @import "response/sec1_992";
+  @import "response/sec2_992";
+  @import "response/sec3_992";
+  @import "response/sec4_992";
+  @import "response/sec5_992";
+  @import "response/sec6_992";
+  @import "response/sec7_992";
+  @import "response/sec8_992";
+  @import "response/sec9_992";
+  @import "response/sec10_992";
+  @import "response/sec11_992";
+  @import "response/sec12_992";
+  @import "response/sec13_992";
+  @import "response/sec14_992";
+  @import "response/sec15_992";
+  @import "response/sec16_992";
+  @import "response/sec17_992";
+  @import "response/sec18_992";
+  @import "response/footer_992";
 
 }
 

@@ -2,17 +2,21 @@
   margin: 0px;
   padding: 40px 0 40px 0;
 
-  &-row{
-    height: 291px;
-  }
 
   &-left{
     height: 100%;
+
+    &-img{
+      height: 100%;
+      @include img-on-bg();
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 15px;
+      right: 15px;
+    }
   }
-  &-left-img{
-    height: 100%;
-    @include img-on-bg();
-  }
+
 
   &-mid{
 

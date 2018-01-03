@@ -1,0 +1,66 @@
+.sp-module-first{
+  text-align: center;
+}
+.sp-column-mid{
+  text-align: left;
+}
+
+#sp-header .logo .sp-logo-h1 img {
+  width: 150px;
+}
+
+.sp-megamenu-wrapper{
+  width: 100%;
+}
+
+.sp-module .btl-menu-item:first-child {
+  padding-left: 0;
+}
+
+#sp-menu .sp-menu-item-sublist{
+  position: static;
+  display: block;
+  background: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  color: $text-color;
+  margin: 0;
+  width: 100%;
+}
+#sp-menu .sp-menu-item-sublink {
+  display: block;
+  padding: 5px 40px;
+  color: $text-color;
+  text-decoration: none;
+  
+  &:hover{
+    background-color: #ccc;
+  }
+}
+#sp-header .logo {
+  margin: 0 auto;
+}
+#sp-header #sp-menu{
+  padding-top: 0;
+}
+.slicknav_menu{
+  background-color: #ffffff;
+  color: #000;
+}
+.slicknav_btn{
+  background-color: $main-color;
+  text-shadow: none;
+  height: 32px;
+  float: none;
+
+  span,
+  .slicknav_menutxt,
+  .slicknav_icon-bar{
+    text-shadow: none;
+  }
+}
+
+.slicknav_nav a{
+  color: $text-color;
+}

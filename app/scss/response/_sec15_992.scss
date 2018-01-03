@@ -1,0 +1,49 @@
+//  sec15
+.sec15-cont-right--active{
+  display: none;
+}
+
+.sec15-cont-left-list-item{
+  border-bottom: 1px solid $text-color;
+
+  &-mobile{
+    display: none;
+
+    &--active{
+      display: block;
+    }
+
+    &-img{
+      height: 40vw;
+      @include img-on-bg();
+      margin-bottom: 20px;
+    }
+    &-text{
+      color: $text-color;
+      margin-bottom: 20px;
+    }
+    & .newstyle7{
+      color: $text-color;
+      list-style-type: none;
+      padding: 0px 0 0 15px;
+      margin: 0 0 20px 0;
+
+      & li:before {
+        content: "\f00c";
+        font-family: 'Fontawesome';
+        position: relative;
+        left: -15px;
+        color: $main-color;
+      }
+    }
+
+  }
+}
+//  END sec15
+
+.sec15-cont-left {
+  width: 280px;
+}
+.sec15-cont-left-list-item{
+  width: 280px;
+}

@@ -10,6 +10,7 @@ $main-color: #e72530;
 $second-color: #fbc719;
 $text-color: rgb(136, 136, 136);
 $text-dark: #888888;
+$mobile-margin: 25px;
 
 @mixin btn(){
   display: inline-block;
@@ -45,9 +46,9 @@ $text-dark: #888888;
   text-transform: uppercase;
 }
 @mixin transform-on-hover{
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
   position: relative;
   z-index: 1;
 }

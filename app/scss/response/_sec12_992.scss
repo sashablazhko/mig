@@ -1,0 +1,7 @@
+.sec12-item{
+  margin-bottom: $mobile-margin;
+}
+
+.sec12 .col-sm-6:last-child .sec12-item{
+  margin-bottom: 0;
+}
