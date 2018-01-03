@@ -7,6 +7,16 @@
     overflow: hidden;
   }
 
+  &-bgleft{
+
+    &-img{
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+    }
+  }
+
   &-cont{
     text-align: center;
 
@@ -42,7 +52,7 @@
       background-color: $main-color;
       text-align: center;
       color: #fff;
-      padding: 6px 0 7px;
+      padding: 14px 0 15px;
       position: relative;
       z-index: 100;
 
@@ -51,6 +61,11 @@
         font-size: 18px;
         text-transform: uppercase;
         color: $second-color;
+        margin-bottom: 8px;
+      }
+
+      &-text{
+        margin-bottom: 8px;
       }
 
       &-social{
@@ -83,5 +98,15 @@
       }
     }
 
+  }
+
+  &-bgright{
+
+    &-img{
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+    }
   }
 }
