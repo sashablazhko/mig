@@ -1,0 +1,68 @@
+.paginate{
+  margin: 0px;
+  padding: 0;
+  text-align: center;
+
+  &-line{
+
+    &-arrow{
+      display: inline-block;
+      vertical-align: middle;
+      width: 41px;
+      height: 41px;
+      line-height: 41px;
+      background-color: #f1f1f1;
+      border-radius: 6px;
+      font-size: 32px;
+      color: #fff;
+
+      &:visited,
+      &:focus,
+      &:active{
+        color: #fff;
+      }
+
+      &:hover{
+        color: #fff;
+      }
+
+      &--active{
+        background-color: $main-color;
+      }
+      &--left{
+        margin-right: 14px;
+      }
+      &--right{
+        margin-left: 14px;
+      }
+    }
+
+    &-list{
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0;
+      margin: 0;
+
+      &-item{
+        display: inline-block;
+        vertical-align: middle;
+        color: #000;
+        
+        &-link{
+          font-size: 24px;
+          color: inherit;
+          text-transform: uppercase;
+          padding: 0 4px;
+
+          &:hover{
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+        &--active{
+          color: $second-color;
+        }
+      }
+    }
+  }
+}

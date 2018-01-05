@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Post</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="body-innerwrapper">
+
+<!--MODAL-->
+	<div class="modal fade migmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="row is-table-row">
+					<div class="col-md-4 col-sm-6 hidden-xs">
+						<div class="migmodal-bgleft">
+							<img class="migmodal-bgleft-img" src="img/modal-bg1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="migmodal-cont">
+							<div class="migmodal-cont-title">
+								СПАСИБО<span class="migmodal-cont-title-color"> ЗА ОБРАЩЕНИЕ!</span>
+							</div>
+							<div class="migmodal-cont-text">
+								Наши специалисты свяжутся с Вами
+								в ближайшее время.*
+							</div>
+							<div class="migmodal-cont-btn">
+								<a href="#" class="migmodal-cont-btn-link" data-dismiss="modal">Вернуться на главную</a>
+							</div>
+							<div class="migmodal-cont-wait">
+								Максимальное время ожидания - 3 часа.
+							</div>
+							<div class="migmodal-cont-foot">
+
+								<div class="migmodal-cont-foot-title">
+									МЫ В СОЦСЕТЯХ
+								</div>
+								<div class="migmodal-cont-foot-text">
+									публикуем самую полезную информацию от ЦенТрМиг
+								</div>
+								<div class="migmodal-cont-foot-social">
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-vk" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									</a>
+									<a class="migmodal-cont-foot-social-link" href="#">
+										<i class="fa fa-youtube" aria-hidden="true"></i>
+									</a>
+								</div>
+								<!--<div class="migmodal-cont-foot-bg"></div>-->
+
+							</div>
+						</div>
+						<!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+					</div>
+					<div class="col-md-4 hidden-sm hidden-xs">
+						<div class="migmodal-bgright">
+							<img class="migmodal-bgright-img" src="img/modal-bg2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--END MODAL-->
+
+<!--TOP HEADER-->
+	<section id="sp-top-bar">
+		<div class="container">
+			<div class="row">
+				<div id="sp-top1" class="col-sm-12 col-md-12">
+					<div class="row sp-column">
+						<div class="col-md-4 col-sm-12 sp-module-first">
+							<div class="sp-module">
+								<div class="sp-module-content">
+									<div id="btlinfo">
+										<div class="btl-panel">
+											<a id="btlinfo-panel-mail" href="mailto:info@centrmig.ru" class="btl-modal">
+												info@centrmig.ru
+											</a>
+											<a id="btlinfo-panel-phone" href="tel:+84955322515" class="btl-modal">
+												8 (495) 532-25-15
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 hidden-xs sp-column-mid">
+							<div class="sp-module">
+								<div class="sp-module-content">
+									<div class="btl">
+										<div class="btl-menu">
+											<ul class="btl-menu-list">
+												<li class="btl-menu-item"><a class="btl-menu-link" href="#">статьи</a></li>
+												<li class="btl-menu-item"><a class="btl-menu-link" href="#">новости</a></li>
+												<li class="btl-menu-item"><a class="btl-menu-link" href="#">о нас</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 sp-column-last">
+							<div class="sp-module">
+								<div class="sp-module-content">
+									<div id="btl" class="btl">
+										<div class="btl-panel">
+											<span id="btl-panel-registration" class="btl-modal">
+												Регистрация
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sp-module">
+								<div class="sp-module-content">
+									<div class="qcbutton">
+										<ul>
+											<li>
+												<a class="cd-signup je_button" href="#">
+													ВОЙТИ
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--END TOP HEADER-->
+
+<!--HEADER-->
+	<div id="sp-header-sticky-wrapper" class="sticky-wrapper">
+		<header id="sp-header">
+			<div class="container">
+				<div class="row">
+
+					<div id="sp-logo" class="col-lg-3 col-md-2 col-sm-12">
+						<div class="sp-column ">
+							<a class="logo" href="#">
+								<div class="sp-logo-h1">
+									<span>
+										<img class="sp-default-logo" src="img/logo2.png">
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div id="sp-menu" class="col-lg-9 col-md-10 col-sm-12">
+						<div class="sp-column">
+							<div class="sp-megamenu-wrapper">
+								<ul class="sp-megamenu-parent menu-fade hidden-xs" id="menu">
+									<li class="sp-menu-item sp-has-child current-item active">
+										<a href="#">
+											<i class="fa fa-user-plus"></i>
+											аутстаффинг
+										</a>
+									</li>
+									<li class="sp-menu-item sp-has-child">
+										<a href="#">
+											<i class="fa fa-share-alt"></i>
+											аутсорсинг
+										</a>
+										<ul class="sp-menu-item-sublist">
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 1</a></li>
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 2</a></li>
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 3</a></li>
+										</ul>
+									</li>
+									<li class="sp-menu-item sp-has-child">
+										<a href="#">
+											<i class="fa fa-address-card" aria-hidden="true"></i>
+											подбор персонала
+										</a>
+									</li>
+									<li class="sp-menu-item sp-has-child">
+										<a href="#">
+											<i class="fa fa-university"></i>
+											консалтинг
+										</a>
+									</li>
+									<li class="sp-menu-item sp-has-child">
+										<a href="#">
+											<i class="fa fa-users"></i>
+											трудоустройство
+										</a>
+										<ul class="sp-menu-item-sublist">
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 1</a></li>
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 2</a></li>
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 3</a></li>
+										</ul>
+									</li>
+									<li class="sp-menu-item sp-has-child">
+										<a href="#">
+											<i class="fa fa-suitcase"></i>
+											документы
+										</a>
+										<ul class="sp-menu-item-sublist">
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 1</a></li>
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 2</a></li>
+											<li class="sp-menu-item-subitem"><a class="sp-menu-item-sublink" href="#">item 3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+	</div>
+<!--END HEADER-->
+
+<!--Crumbs-->
+	<div class="crumbs" style="background-image: url('img/crumbs.jpg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="crumbs-line">
+						<ul class="crumbs-line-list">
+							<li class="crumbs-line-list-item">
+								<a href="#" class="crumbs-line-list-item-link">
+									Главная
+								</a>
+							</li>
+							<li class="crumbs-line-list-item">
+								<a href="#" class="crumbs-line-list-item-link">
+									Статьи
+								</a>
+							</li>
+							<li class="crumbs-line-list-item">
+								<a href="#" class="crumbs-line-list-item-link">
+									Инновационные технологии управления персоналом
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="crumbs-title">
+						ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ УПРАВЛЕНИЯ ПЕРСОНАЛОМ
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--END Crumbs-->
+
+	<div class="clearfix"></div>
+
+<!--POST-->
+	<div class="post">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="post-right-pic">
+						<img class="post-right-pic-img" src="img/post.jpg" alt="">
+					</div>
+					<div class="post-right-info">
+						<dl class="post-right-info-list">
+							<dd class="post-right-info-item">
+								<i class="fa fa-user"></i>
+								<span class="post-right-info-item-text">администратор</span>
+							</dd>
+							<dd class="post-right-info-item">
+								<i class="fa fa-folder-open-o"></i>
+								<span class="post-right-info-item-text">информация</span>
+							</dd>
+							<dd class="post-right-info-item">
+								<i class="fa fa-calendar-o"></i>
+								<span class="post-right-info-item-text">17.11.2017</span>
+							</dd>
+							<dd class="post-right-info-item">
+								<i class="fa fa-eye"></i>
+								<span class="post-right-info-item-text">127</span>
+							</dd>
+							<dd class="post-right-info-item">
+								<div class="post-right-info-item-voting">
+									<span class="post-right-info-item-star post-right-info-item-star--active"></span>
+									<span class="post-right-info-item-star post-right-info-item-star--activehalf"></span>
+									<span class="post-right-info-item-star"></span>
+									<span class="post-right-info-item-star"></span>
+									<span class="post-right-info-item-star"></span>
+								</div>
+							</dd>
+							<dd class="post-right-info-item">
+								<span class="post-right-info-item-text post-right-info-item-text-tags">ТЕГИ: </span>
+								<a class="post-right-info-item-text post-right-info-item-text--tags">#ПЕРСОНАЛ</a>
+								<a class="post-right-info-item-text post-right-info-item-text--tags">#АУДИТ</a>
+								<a class="post-right-info-item-text post-right-info-item-text--tags">#АУТСОРСИНГ</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="post-right-title">
+						<span class="post-right-title-color">Инновационные технологии</span> управления персоналом
+					</div>
+					<div class="post-right-posttitle">
+						<span class="post-right-posttitle-color">Quisque placerat diam ut leo finibus scelerisque.</span>
+						<br>
+						Sed quis nisl et velit facilisis varius in non mi. Vivamus in lorem iaculis, faucibus ante malesuada, tristique lectus. Quisque finibus metus ac ante eleifend, in faucibus urna fringilla. Praesent eget viverra lorem, vitae vulputate elit. Nam laoreet sem at sapien efficitur placerat. Vivamus tincidunt porta lacus, at imperdiet mauris.
+					</div>
+					<div class="post-right-text">
+						Integer bibendum ligula sapien, at mattis tellus ullamcorper id. Donec tortor dui, commodo eget sollicitudin sit amet, scelerisque eu metus. Ut magna quam, elementum et risus et, porttitor posuere mi. Suspendisse pellentesque vulputate tellus posuere egestas. Nullam at efficitur est, eleifend eleifend orci. Aliquam ultrices eros id diam interdum dapibus. Sed volutpat, libero at eleifend blandit, nisi nulla pellentesque sem, quis pretium odio orci malesuada erat. Ut urna enim, ullamcorper in sagittis sit amet, blandit nec nisi. Ut ornare est purus, eget aliquam enim tristique eu.
+						<br><br>
+						Vivamus accumsan sagittis sodales. Ut non ornare turpis. Integer pulvinar tellus sed purus euismod, eu lacinia massa interdum. Aenean semper libero non libero mattis tempus. Vestibulum pretium quis leo et gravida. Mauris eget lorem urna. Proin auctor malesuada sem eu venenatis. Vestibulum non nulla sem. Pellentesque ut mauris tellus. Donec volutpat nec nisi sit amet fermentum. Sed et placerat ligula, sit amet tempor dolor. Quisque sed quam eu orci feugiat aliquet. Fusce mauris nisl, commodo ac lectus non, malesuada venenatis leo. Aliquam at diam congue, gravida dolor nec, blandit urna. Nulla consequat tellus id viverra lacinia.
+					</div>
+
+					<!---->
+					<div class="row">
+						<div class="col-lg-4 col-sm-6">
+							<div class="post-after">
+								<div class="post-after-title">
+									<span class="post-after-title-color">ПОСЛЕДНИЕ</span> СТАТЬИ:
+								</div>
+								<ul class="post-after-list">
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Снижение штатной численности</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Отсутствие риска трудовых споров</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Сопровождение на всех этапах</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Отсутствие риска трудовых споров</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Сопровождение на всех этапах</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Отсутствие риска трудовых споров.</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="post-after">
+								<div class="post-after-title">
+									<span class="post-after-title-color">СТАТЬИ</span> ПО ЭТОЙ ТЕМЕ:
+								</div>
+								<ul class="post-after-list">
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Снижение штатной численности</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Отсутствие риска трудовых споров</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Сопровождение на всех этапах</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Отсутствие риска трудовых споров</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Сопровождение на всех этапах</a>
+									</li>
+									<li class="post-after-item">
+										<a href="#" class="post-after-link">Отсутствие риска трудовых споров.</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div class="row">
+						<div class="col-lg-8 col-md-12">
+							<form	action="" class="post-inpcom">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="post-inpcom-title">
+											<span class="post-inpcom-title-color">ОСТАВИТЬ</span> КОММЕНТАРИЙ
+										</div>
+										<div class="post-inpcom-posttitle">
+											Будьте первым - оставьте свой комментарий к статье.
+										</div>
+										<div class="post-inpcom-posttitle">
+											Все поля обязательны к заполнению.
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="post-inpcom-name">
+											<input type="text" class="post-inpcom-name-inp" placeholder="Имя">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="post-inpcom-mail">
+											<input type="text" class="post-inpcom-mail-inp" placeholder="E-mail">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="post-inpcom-text">
+											<textarea name="" id="" class="post-inpcom-text-inp" placeholder="Ваше сообщение"></textarea>
+										</div>
+										<button class="post-inpcom-btn">Отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!---->
+
+				</div>
+				<div class="col-md-3">
+					<div class="post-left-search">
+						<div class="post-left-search-header">
+							<div class="post-left-search-header-text">
+								поиск
+							</div>
+						</div>
+						<div class="post-left-search-cont">
+							<input type="text" class="post-left-search-cont-inp" placeholder="Поиск...">
+						</div>
+					</div>
+					<div class="post-left-info">
+						<div class="post-left-info-header">
+							<div class="post-left-info-header-text">
+								ПОСЛЕДНЯЯ ИНФОРМАЦИЯ
+							</div>
+						</div>
+						<div class="post-left-info-cont">
+							<ul class="post-left-info-cont-list">
+								<li class="post-left-info-cont-item">
+									<a href="#" class="post-left-info-cont-link">Снижение штатной численности</a>
+								</li>
+								<li class="post-left-info-cont-item">
+									<a href="#" class="post-left-info-cont-link">Отсутствие риска трудовых споров</a>
+								</li>
+								<li class="post-left-info-cont-item">
+									<a href="#" class="post-left-info-cont-link">Сопровождение на всех этапах</a>
+								</li>
+								<li class="post-left-info-cont-item">
+									<a href="#" class="post-left-info-cont-link">Отсутствие риска трудовых споров</a>
+								</li>
+								<li class="post-left-info-cont-item">
+									<a href="#" class="post-left-info-cont-link">Сопровождение на всех этапах</a>
+								</li>
+								<li class="post-left-info-cont-item">
+									<a href="#" class="post-left-info-cont-link">Отсутствие риска трудовых споров.</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--END POST-->
+
+  <div class="clearfix"></div>
+
+	<!--FOOTER-->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-about">
+						<div class="footer-about-logo">
+							<a href="#" class="footer-about-logo-link">
+								<img class="footer-about-logo-link-img" src="img/logo2.png" alt="">
+							</a>
+						</div>
+						<div class="footer-about-text">
+							Ваш помощник в сфере аутстаффинга, аутсорсинга и миграционных
+							услуг для крупных и малых предприятий
+						</div>
+						<div class="footer-about-social">
+							<a class="footer-about-social-link" href="#">
+								<i class="fa fa-vk" aria-hidden="true"></i>
+							</a>
+							<a class="footer-about-social-link" href="#">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+							<a class="footer-about-social-link" href="#">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							</a>
+							<a class="footer-about-social-link" href="#">
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							</a>
+							<a class="footer-about-social-link" href="#">
+								<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							</a>
+							<a class="footer-about-social-link" href="#">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-contact">
+						<div class="footer-contact-title">
+							Контакты
+						</div>
+						<ul class="footer-contact-list">
+							<li class="footer-contact-list-item">
+								129343, Россия, Москва,
+								<br>
+								проезд Серебрякова, 14/12, офис 7
+							</li>
+							<li class="footer-contact-list-item">
+								ИНН 7716861187
+								<br>
+								КПП 771601001
+								<br>
+								ОГРН 1177746588975
+							</li>
+							<li class="footer-contact-list-item">
+								<a href="tel:+84955322515" class="footer-contact-list-item-link">
+									8 (495) 532-25-15
+								</a>
+								<a href="mailto:info@centrmig.ru" class="footer-contact-list-item-link">
+									info@centrmig.ru
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+        <div class="footer-clearfix992"></div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-info">
+						<div class="footer-info-title">
+							<span class="footer-info-title-color">ВАЖНАЯ</span> ИНФОРМАЦИЯ
+						</div>
+						<ul class="footer-info-list">
+							<li class="footer-info-item">
+								<a href="#" class="footer-info-link">Снижение штатной численности</a>
+							</li>
+							<li class="footer-info-item">
+								<a href="#" class="footer-info-link">Отсутствие риска трудовых споров</a>
+							</li>
+							<li class="footer-info-item">
+								<a href="#" class="footer-info-link">Сопровождение на всех этапах</a>
+							</li>
+							<li class="footer-info-item">
+								<a href="#" class="footer-info-link">Отсутствие риска трудовых споров</a>
+							</li>
+							<li class="footer-info-item">
+								<a href="#" class="footer-info-link">Сопровождение на всех этапах</a>
+							</li>
+							<li class="footer-info-item">
+								<a href="#" class="footer-info-link">Отсутствие риска трудовых споров.</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-social">
+						<div class="footer-social-title">
+							<span class="footer-social-title-color">последнее</span> из соцсетей
+						</div>
+						<ul class="footer-social-list">
+							<li class="footer-social-list-item">
+								<span class="footer-social-list-item-from">@newivanov12</span>
+								<span class="footer-social-list-item-text">
+									этот случай нужно разбирать индивидуально
+								</span>
+								<div class="footer-social-list-item-readmore">
+									<a href="#" class="footer-social-list-item-readmore-btn">Read more:
+										<span class="footer-social-list-item-readmore-btn-link">goo.gl/xJ4h5</span>
+									</a>
+								</div>
+							</li>
+							<li class="footer-social-list-item">
+								<span class="footer-social-list-item-from">@newivanov12</span>
+								<span class="footer-social-list-item-text">
+									этот случай нужно разбирать индивидуально
+								</span>
+								<div class="footer-social-list-item-readmore">
+									<a href="#" class="footer-social-list-item-readmore-btn">Read more:
+										<span class="footer-social-list-item-readmore-btn-link">goo.gl/xJ4h5</span>
+									</a>
+								</div>
+							</li>
+							<li class="footer-social-list-item">
+								<span class="footer-social-list-item-from">@newivanov12</span>
+								<span class="footer-social-list-item-text">
+									этот случай нужно разбирать индивидуально
+								</span>
+								<div class="footer-social-list-item-readmore">
+									<a href="#" class="footer-social-list-item-readmore-btn">Read more:
+										<span class="footer-social-list-item-readmore-btn-link">goo.gl/xJ4h5</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--END FOOTER-->
+
+</div>
+
+<script src="js/libs.js"></script>
+<!--<script src="js/jquery.sticky.js"></script>-->
+<script src="js/common.js"></script>
+
+</body>
+</html>
