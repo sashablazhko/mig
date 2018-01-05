@@ -82,6 +82,7 @@ gulp.task('img', function() {
 });
 
 // NODE_ENV=production gulp build
+// set NODE_ENV="production" && gulp build
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
