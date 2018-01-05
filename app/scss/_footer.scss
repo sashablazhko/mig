@@ -155,11 +155,11 @@
       -webkit-transition: 300ms;
       transition: 300ms;
       position: relative;
+      line-height: 30px;
 
     }
     &-link{
       display: block;
-      padding: 6px 0;
       position: relative;
       color: $text-color;
 

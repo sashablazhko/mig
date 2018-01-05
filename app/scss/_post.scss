@@ -1,4 +1,4 @@
-.sec10 {
+.post {
   margin: 0px;
   padding: 40px 0 40px 0;
 
@@ -86,37 +86,10 @@
 
   &-right{
 
-    &-quote{
-      @include img-on-bg();
-      color: #fff;
-      font-size: 18px;
-      font-family: $ff-main-italic;
-      line-height: 34px;
-      padding: 78px 70px;
+    &-pic{
 
-      &-text{
-        position: relative;
-
-
-        &:before{
-          font-family: 'FontAwesome';
-          display: inline-block;
-          content: "\f10d";
-          font-size: 50px;
-          color: $second-color;
-          position: absolute;
-          top: -44px;
-        }
-        &:after{
-          font-family: 'FontAwesome';
-          display: inline-block;
-          content: "\f10e";
-          font-size: 50px;
-          color: $second-color;
-          position: absolute;
-          bottom: -44px;
-          right: 0px;
-        }
+      &-img{
+        width: 100%;
       }
     }
 
@@ -144,6 +117,19 @@
 
         &-text{
           padding-left: 5px;
+
+          &-tags{
+            padding-left: 0;
+          }
+
+          &--tags{
+            color: $main-color;
+
+            &:hover{
+              color: $main-color;
+              cursor: pointer;
+            }
+          }
         }
 
         &-voting{
@@ -177,6 +163,20 @@
     &-title{
       @include h2-title();
       margin-bottom: 20px;
+
+      &-color{
+        color: $main-color;
+      }
+    }
+
+    &-posttitle{
+      font-family: $ff-main-italic;
+      font-size: 18px;
+      margin-bottom: 25px;
+
+      &-color{
+        color: $main-color;
+      }
     }
 
     &-text{
@@ -184,14 +184,125 @@
       margin-bottom: 25px;
     }
 
-    &-btn-a{
-      @include btn();
-      text-transform: none;
-      font-family: $ff-main;
+  }
+
+  &-after{
+    margin-bottom: 20px;
+
+    &-title{
+      color: #000;
+      font-family: $ff-main-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      //margin-bottom: 19px;
+
+      &-color{
+        color: $main-color;
+      }
+    }
+
+    &-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    &-item{
+      display: block;
+      -webkit-transition: 300ms;
+      transition: 300ms;
+      position: relative;
+      line-height: 30px;
+
+    }
+    &-link{
+      display: block;
+      position: relative;
+      color: $main-color;
+
+      &:before{
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        content: "";
+        margin-right: 8px;
+        background-color: $second-color;
+        vertical-align: middle;
+      }
+
+      &:hover{
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+
+  &-inpcom{
+    font-size: 14px;
+
+    &-title{
+      color: #000;
+      font-family: $ff-main-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      &-color{
+        color: $main-color;
+      }
+    }
+
+    &-posttitle{
+      font-size: 13px;
+      color: $text-color;
+
+      &:last-child{
+        margin-bottom: 20px;
+      }
+    }
+
+    &-name,
+    &-mail{
+
+      &-inp{
+        width: 100%;
+        border: 1px solid #b0b0b0;
+        padding: 9px 15px;
+        vertical-align: middle;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-text{
+
+      &-inp{
+        width: 100%;
+        height: 155px;
+        border: 1px solid #b0b0b0;
+        padding: 9px 15px;
+        vertical-align: middle;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-btn{
+      display: inline-block;
+      padding: 0 27px;
+      background: #e72530;
+      font-family: "PT_Sans";
+      font-size: 14px;
+      height: 48px;
+      line-height: 48px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      color: #fff;
+      text-transform: capitalize;
+      text-decoration: none;
+      vertical-align: middle;
+      border: none;
 
       &:hover{
         @include btn-hover();
-        color: #fff;
       }
     }
   }

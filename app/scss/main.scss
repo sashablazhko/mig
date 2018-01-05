@@ -24,7 +24,7 @@ $mobile-margin: 25px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: 5;
   text-decoration: none;
   vertical-align: middle;
 }
@@ -127,5 +127,7 @@ h1, h2, h3, h4, h5, h6{
 @import "sec20";
 @import "footer";
 @import "modal";
+@import "post";
+@import "news";
 
 @import "responsive";

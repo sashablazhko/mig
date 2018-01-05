@@ -238,6 +238,16 @@ jQuery(function($) {
     ]
   });
 
+//  slider for news page
+  $('.news-item-img-slid').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+//  END slider for news page
+
 //  sec6 переключение вкладок desktop
   $('.sec6-tab').on('click', function(e) {
     e.preventDefault();

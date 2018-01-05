@@ -1,0 +1,16 @@
+.news-item{
+  margin-bottom: $mobile-margin;
+}
+
+.news .col-sm-6:last-child .news-item{
+  margin-bottom: 0;
+}
+
+.news-item-img {
+  height: 320px;
+  background-position: top center;
+}
+.news-item-img-slid-item{
+  height: 320px;
+  background-position: center center;
+}
