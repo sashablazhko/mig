@@ -52,6 +52,13 @@ $mobile-margin: 25px;
   position: relative;
   z-index: 1;
 }
+@mixin transform-on-hover2{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  position: relative;
+  z-index: 1;
+}
 
 @import "fonts";
 
@@ -97,6 +104,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @import "header";
+@import "crumbs";
 @import "slider";
 @import "sec1";
 @import "sec2";
@@ -116,6 +124,7 @@ h1, h2, h3, h4, h5, h6{
 @import "sec17";
 @import "sec18";
 @import "sec19";
+@import "sec20";
 @import "footer";
 @import "modal";
 

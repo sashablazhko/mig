@@ -1,0 +1,23 @@
+.sec8-bg-left,
+.sec8-bg-right{
+  display: none;
+}
+
+.sec8-item{
+  margin-bottom: $mobile-margin;
+}
+
+.sec8-item-cont ul{
+  padding-bottom: 25px;
+}
+.sec8-item-cont br{
+  display: none;
+}
+
+.sec8 .sppb-addon-content{
+  margin-bottom: 20px;
+}
+
+.sec8 .sec8-item:last-child{
+  margin-bottom: 0px;
+}

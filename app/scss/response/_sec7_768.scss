@@ -1,0 +1,10 @@
+.sec7{
+
+  .is-table-row{
+    display: block;
+  }
+  .is-table-row [class*="col-"] {
+    float: left;
+    display: block;
+  }
+}

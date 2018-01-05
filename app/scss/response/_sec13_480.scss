@@ -1,0 +1,15 @@
+.sec13 .is-table-row{
+  display: block;
+}
+.sec13 .is-table-row [class*="col-"] {
+  float: left;
+  display: block;
+}
+
+.sec13-mid{
+  margin-bottom: $mobile-margin;
+}
+
+.sec13-right-text{
+  height: auto;
+}

@@ -1,0 +1,40 @@
+.sec2-flex{
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap;
+}
+.sec2-flex-item {
+  width: 50%;
+}
+.sec2-flex-item:first-child .sec2-flex-item-cont:hover, .sec2-flex-item:nth-child(2) .sec2-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec2-flex-item-img:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec2-flex-item:nth-child(3) .sec2-flex-item-cont:hover, .sec2-flex-item:nth-child(4) .sec2-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec2-flex--five .sec2-flex-item {
+  width: 50%;
+}
+.sec2-flex--five .sec2-flex-item:nth-child(even) .sec2-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec2-flex--five .sec2-flex-item:nth-child(odd) .sec2-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.sec2-flex-item-cont-text{
+  height: 72px;
+  overflow: hidden;
+}

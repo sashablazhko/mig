@@ -1,0 +1,35 @@
+.main-slider .slick-prev,
+.main-slider .slick-next{
+  display: none !important;
+}
+.main-slider .slick-dots {
+  bottom: 10px;
+}
+.main-slider-item {
+  height: 520px;
+}
+.main-slider .content {
+  padding-bottom: 0px;
+}
+.main-slider .content-pretitle-txt {
+  padding: 3px 6px;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+.main-slider .content-title {
+  font-size: 40px;
+  line-height: 1;
+}
+.main-slider .content-text-txt {
+  padding: 3px 6px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.main-slider .content-form-inp {
+  margin-right: 0;
+  display: block;
+  margin-bottom: 15px;
+}
+.main-slider .content-afterform {
+  font-size: 14px;
+}

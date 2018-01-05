@@ -45,6 +45,10 @@
 
       &-slid-item{
         height: 204px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
       }
     }
 

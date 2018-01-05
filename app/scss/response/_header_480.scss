@@ -7,7 +7,13 @@
 }
 
 .sp-module-first{
-  text-align: center;
+  text-align: right;
+}
+#sp-top1 .sp-module #btlinfo-panel-mail {
+  padding-left: 0px;
+}
+#sp-top1 .sp-module #btlinfo-panel-phone {
+  padding-right: 0px;
 }
 .sp-column-mid{
   text-align: left;

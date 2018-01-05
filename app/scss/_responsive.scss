@@ -30,17 +30,12 @@
   @import "response/sec16_1200";
   @import "response/sec17_1200";
   @import "response/sec18_1200";
+
+  @import "response/sec20_1200";
   @import "response/footer_1200";
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px){
-  #menu {
-    display:none;
-  }
-
-  .slicknav_menu {
-    display:block;
-  }
 
   @import "response/modal_992";
   @import "response/header_992";
@@ -63,14 +58,66 @@
   @import "response/sec16_992";
   @import "response/sec17_992";
   @import "response/sec18_992";
+
+  @import "response/sec20_992";
   @import "response/footer_992";
 
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px){
 
+  @import "response/modal_768";
+  @import "response/header_768";
+  @import "response/slider_768";
+  @import "response/sec1_768";
+  @import "response/sec2_768";
+  @import "response/sec3_768";
+  @import "response/sec4_768";
+  @import "response/sec5_768";
+  @import "response/sec6_768";
+  @import "response/sec7_768";
+  @import "response/sec8_768";
+  @import "response/sec9_768";
+  @import "response/sec10_768";
+  @import "response/sec11_768";
+  @import "response/sec12_768";
+  @import "response/sec13_768";
+  @import "response/sec14_768";
+  @import "response/sec15_768";
+  @import "response/sec16_768";
+  @import "response/sec17_768";
+  @import "response/sec18_768";
+
+  @import "response/sec20_768";
+  @import "response/footer_768";
+
 }
 
 @media screen and (max-width: 480px) and (min-width: 320px){
+
+  @import "response/modal_480";
+  @import "response/header_480";
+  @import "response/slider_480";
+  @import "response/sec1_480";
+  @import "response/sec2_480";
+  @import "response/sec3_480";
+  @import "response/sec4_480";
+  @import "response/sec5_480";
+  @import "response/sec6_480";
+  @import "response/sec7_480";
+  @import "response/sec8_480";
+  @import "response/sec9_480";
+  @import "response/sec10_480";
+  @import "response/sec11_480";
+  @import "response/sec12_480";
+  @import "response/sec13_480";
+  @import "response/sec14_480";
+  @import "response/sec15_480";
+  @import "response/sec16_480";
+  @import "response/sec17_480";
+  @import "response/sec18_480";
+
+  @import "response/sec20_480";
+  @import "response/footer_480";
 
 }

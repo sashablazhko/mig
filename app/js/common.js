@@ -132,16 +132,25 @@ jQuery(function($) {
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
-        breakpoint: 993,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
         }
       },
       {
@@ -182,7 +191,16 @@ jQuery(function($) {
     infinite: true,
     speed: 300,
     slidesToShow: 2,
-    slidesToScroll: 2
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   $('.sec16-slid').slick({
@@ -190,7 +208,34 @@ jQuery(function($) {
     infinite: true,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
 //  sec6 переключение вкладок desktop
@@ -211,6 +256,18 @@ jQuery(function($) {
     });
   });
 //  END sec6 переключение вкладок desktop
+//  sec6 переключение вкладок mobile
+  $('#sec6-sel').on('change', function() {
+    var selId = $("#sec6-sel :selected").val();
+    $('.sec6-cont').each(function(indx, element){
+      if (indx == selId)
+        $(element).addClass('sec6-cont--active');
+      else {
+        $(element).removeClass('sec6-cont--active');
+      }
+    });
+  });
+//  END sec6 переключение вкладок mobile
 
 //  sec15 переключение вкладок desktop
   $('.sec15-cont-left-list-item-link').on('click', function(e){
@@ -349,10 +406,10 @@ jQuery(function($) {
     tax = $('input[name="radio-tax"]:checked').val();
     changeSalary();
     if (tax == 1) {
-      $('input[name="radio-rate"]').attr('disabled', false);
+      $('input[name="radio-rate"]').prop('disabled', false);
     } else {
       $('input[name="radio-rate"]').first().prop('checked', true);
-      $('input[name="radio-rate"]').attr('disabled', true);
+      $('input[name="radio-rate"]').prop('disabled', true);
     }
     calculatePercent();
   });
@@ -360,10 +417,10 @@ jQuery(function($) {
     tax2 = $('input[name="radio-tax2"]:checked').val();
     changeSalary2();
     if (tax2 == 1) {
-      $('input[name="radio-rate2"]').attr('disabled', false);
+      $('input[name="radio-rate2"]').prop('disabled', false);
     } else {
       $('input[name="radio-rate2"]').first().prop('checked', true);
-      $('input[name="radio-rate2"]').attr('disabled', true);
+      $('input[name="radio-rate2"]').prop('disabled', true);
     }
     calculatePercent2();
   });

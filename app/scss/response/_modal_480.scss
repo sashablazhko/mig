@@ -1,0 +1,14 @@
+.modal-lg {
+  width: auto;
+}
+
+.modal {
+
+  & .is-table-row{
+    display: block;
+  }
+  & .is-table-row [class*="col-"] {
+    float: left;
+    display: block;
+  }
+}

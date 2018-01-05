@@ -1,0 +1,30 @@
+.sec6-foot {
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+.sec6-foot-itemline{
+  margin-top: $mobile-margin;
+}
+
+.sec6-sel-wrap{
+  margin-bottom: 0;
+}
+.sec6-sel{
+  border-radius: 0;
+  //-webkit-appearance: none;
+  background-color: $main-color;
+  color: $second-color;
+  font-family: "PT_Sans-Bold";
+  font-size: 18px;
+  text-transform: uppercase;
+  height: auto;
+}
+
+.sec6-foot-itemcir{
+  border-bottom: 1px solid $text-color;
+  padding: 10px 0;
+}
+
+.sec6 .label-tooltip{
+  display: none;
+}

@@ -1,0 +1,22 @@
+.sec1-left-top {
+  margin-bottom: 0px;
+}
+
+.sec1-left-top-item{
+  margin-bottom: $mobile-margin;
+}
+.sec1-right-top{
+  margin-bottom: $mobile-margin;
+}
+.sec1-right-bot ul{
+  margin-bottom:$mobile-margin;
+}
+.sec1-right-bot .sec1-right-bot-item-red{
+  margin-bottom: $mobile-margin;
+}
+.sec1-right-bot-item:last-child .sec1-right-bot-item-red{
+  margin-bottom: 0;
+}
+.sec1-right-bot br{
+  display: none;
+}

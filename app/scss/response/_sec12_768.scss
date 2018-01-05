@@ -1,0 +1,16 @@
+.sec12-item{
+  margin-bottom: $mobile-margin;
+}
+
+.sec12 .col-sm-6:last-child .sec12-item{
+  margin-bottom: 0;
+}
+
+.sec12-item-img {
+  height: 320px;
+  background-position: top center;
+}
+.sec12-item-img-slid-item{
+  height: 320px;
+  background-position: center center;
+}

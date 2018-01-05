@@ -1,0 +1,48 @@
+.sec20-flex{
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap;
+}
+.sec20-flex-item {
+  width: 100%;
+}
+.sec20-flex-item:first-child .sec20-flex-item-cont,
+.sec20-flex-item:nth-child(3) .sec20-flex-item-cont{
+  border-bottom: 10px solid #fff;
+}
+.sec20-flex-item:nth-child(2) .sec20-flex-item-img,
+.sec20-flex-item:nth-child(4) .sec20-flex-item-img{
+  border-bottom: 10px solid #fff;
+}
+.sec20-flex-item:first-child .sec20-flex-item-cont:hover, .sec20-flex-item:nth-child(2) .sec20-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec20-flex-item-img:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec20-flex-item:nth-child(3) .sec20-flex-item-cont:hover, .sec20-flex-item:nth-child(4) .sec20-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec20-flex--five .sec20-flex-item {
+  width: 100%;
+}
+.sec20-flex--five .sec20-flex-item:nth-child(even) .sec20-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sec20-flex--five .sec20-flex-item:nth-child(odd) .sec20-flex-item-cont:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.sec20-flex-item-cont-text{
+  height: 126px;
+  overflow: hidden;
+}
