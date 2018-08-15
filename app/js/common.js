@@ -651,7 +651,186 @@ var minSalary2 = MPOTMoskow;
 var amountCoef = 1;
 var amountCoef2 = 1;
 
-var percent = {
+var percent1 = {
+  '1-1-1-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0.051,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+  '1-2-1-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+  '1-1-2-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.029,
+    'v4': 0.002,
+    'v5': 0.051,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+  '1-2-2-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.018,
+    'v4': 0.002,
+    'v5': 0,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+  '1-1-1-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0.051,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+  '1-2-1-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+  '1-1-2-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.029,
+    'v4': 0.002,
+    'v5': 0.051,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+  '1-2-2-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.018,
+    'v4': 0.002,
+    'v5': 0,
+    'v6': 0.18,
+    'v7': priceMIG,
+    'v8': 0.18,
+    'v9': 0.18,
+    'v10': 0.2
+  },
+
+  '2-1-1-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0.051,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  },
+  '2-2-1-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  },
+  '2-1-2-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.029,
+    'v4': 0.002,
+    'v5': 0.051,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  },
+  '2-2-2-1': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.018,
+    'v4': 0.002,
+    'v5': 0,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  },
+  '2-1-1-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0.051,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  },
+  '2-2-1-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0,
+    'v4': 0,
+    'v5': 0,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  },
+  '2-1-2-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.029,
+    'v4': 0.002,
+    'v5': 0.051,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  },
+  '2-2-2-2': {
+    'v1': 0.13,
+    'v2': 0.22,
+    'v3': 0.018,
+    'v4': 0.002,
+    'v5': 0,
+    'v6': 0,
+    'v7': priceMIG,
+    'v11': economyFOT
+  }
+};
+var percent2 = {
   '1-1-1-1': {
    'v1': 0.13,
    'v2': 0.22,
@@ -870,40 +1049,40 @@ function calculatePercent() {
 
   var key = tax+'-'+national+'-'+type+'-'+region;
 
-  var one = Math.round(currentSalary - (currentSalary * percent[key].v1));
+  var one = Math.round(currentSalary - (currentSalary * percent1[key].v1));
 
-  var two = Math.round((currentSalary * percent[key].v2)+(currentSalary * percent[key].v3)+(currentSalary * percent[key].v4)+(currentSalary * percent[key].v5));
+  var two = Math.round((currentSalary * percent1[key].v2)+(currentSalary * percent1[key].v3)+(currentSalary * percent1[key].v4)+(currentSalary * percent1[key].v5));
 
-  var threeTmp = one + (currentSalary * percent[key].v1)+(currentSalary * percent[key].v2)+(currentSalary * percent[key].v3)+(currentSalary * percent[key].v4)+(currentSalary * percent[key].v5);
-  var three = Math.round(threeTmp + threeTmp * percent[key].v6);
+  var threeTmp = one + (currentSalary * percent1[key].v1)+(currentSalary * percent1[key].v2)+(currentSalary * percent1[key].v3)+(currentSalary * percent1[key].v4)+(currentSalary * percent1[key].v5);
+  var three = Math.round(threeTmp + threeTmp * percent1[key].v6);
 
-  var four = Math.round(percent[key].v7 * amountCoef);
+  var four = Math.round(percent1[key].v7 * amountCoef * amount);
 
   var five, six;
   var one100, two100, three100, four100, five100, six100;
   if (tax == 1) {
-    five = Math.round((threeTmp + percent[key].v7 * amountCoef) * percent[key].v10 + (threeTmp + percent[key].v7 * amountCoef) * percent[key].v9 - percent[key].v7* amountCoef * percent[key].v8 - percent[key].v7 * amountCoef);
+    five = Math.round((threeTmp + percent1[key].v7 * amountCoef) * percent1[key].v10 + (threeTmp + percent1[key].v7 * amountCoef) * percent1[key].v9 - percent1[key].v7* amountCoef * percent1[key].v8 - percent1[key].v7 * amountCoef);
 
     six = Math.round((five / three) * 100);
 
     one100 = Math.round(currentSalary);
-    two100 = Math.round(threeTmp * percent[key].v6 + percent[key].v7* amountCoef * percent[key].v8);
-    three100 = Math.round(three + percent[key].v7* amountCoef + percent[key].v7* amountCoef * percent[key].v8);
-    four100 = Math.round(percent[key].v7* amountCoef + percent[key].v7* amountCoef * percent[key].v8);
+    two100 = Math.round(threeTmp * percent1[key].v6 + percent1[key].v7* amountCoef * percent1[key].v8);
+    three100 = Math.round(three + percent1[key].v7* amountCoef + percent1[key].v7* amountCoef * percent1[key].v8);
+    four100 = Math.round((percent1[key].v7* amountCoef + percent1[key].v7* amountCoef * percent1[key].v8)*amount);
     five100 = five;
-    six100 = six;
+    six100 = 100;
 
   } else {
     five = 0;
 
-    six = Math.round(100 - ((three + four) / (three + percent[key].v11)) * 100);
+    six = Math.round(100 - ((three + four / amount) / (three + percent1[key].v11)) * 100);
 
-    one100 = +currentSalary + currentSalary * percent[key].v1;
-    two100 = two + currentSalary * percent[key].v1;
-    three100 = three + percent[key].v7* amountCoef;
-    four100 = percent[key].v7* amountCoef;
+    one100 = +currentSalary + currentSalary * percent1[key].v1;
+    two100 = two + currentSalary * percent1[key].v1;
+    three100 = three + percent1[key].v7* amountCoef;
+    four100 = percent1[key].v7* amountCoef*amount;
     five100 = 1;
-    six100 = six;
+    six100 = 100;
 
   }
 
@@ -922,6 +1101,7 @@ function calculatePercent() {
   }
   onePercent = onePercent.toFixed(2);
   $('#one-sum').text(one);
+  circle1.set(0);
   circle1.animate(onePercent);
 
   var twoPercent;
@@ -932,6 +1112,7 @@ function calculatePercent() {
   }
   twoPercent = twoPercent.toFixed(2);
   $('#two-sum').text(two);
+  circle2.set(0);
   circle2.animate(twoPercent);
 
   var threePercent;
@@ -942,6 +1123,7 @@ function calculatePercent() {
   }
   threePercent = threePercent.toFixed(2);
   $('#three-sum').text(three);
+  circle3.set(0);
   circle3.animate(threePercent);
 
   var fourPercent;
@@ -952,6 +1134,7 @@ function calculatePercent() {
   }
   fourPercent = fourPercent.toFixed(2);
   $('#four-sum').text(four);
+  line1.set(0);
   line1.animate(fourPercent);
 
   var fivePercent;
@@ -962,16 +1145,16 @@ function calculatePercent() {
   }
   fivePercent = fivePercent.toFixed(2);
   $('#five-sum').text(five);
+  line2.set(0);
   line2.animate(fivePercent);
 
-  var sixPercent;
-  if (six / six100 > 1){
+  var sixPercent  = six / six100;
+  if (sixPercent > 1){
     sixPercent = 1;
-  } else {
-    sixPercent = six / six100;
   }
-  sixPercent = sixPercent.toFixed(2);
+  // sixPercent = sixPercent.toFixed(2);
   $('#six-sum').text(six);
+  line3.set(0);
   line3.animate(sixPercent);
 
 }
@@ -987,38 +1170,38 @@ function calculatePercent2() {
 
   var key2 = tax2+'-'+national2+'-'+type2+'-'+region2;
 
-  var one2 = Math.round(currentSalary2 - (currentSalary2 * percent[key2].v1));
+  var one2 = Math.round(currentSalary2 - (currentSalary2 * percent2[key2].v1));
 
-  var two2 = Math.round((currentSalary2 * percent[key2].v2)+(currentSalary2 * percent[key2].v3)+(currentSalary2 * percent[key2].v4)+(currentSalary2 * percent[key2].v5));
+  var two2 = Math.round((currentSalary2 * percent2[key2].v2)+(currentSalary2 * percent2[key2].v3)+(currentSalary2 * percent2[key2].v4)+(currentSalary2 * percent2[key2].v5));
 
-  var threeTmp2 = one2 + (currentSalary2 * percent[key2].v1)+(currentSalary2 * percent[key2].v2)+(currentSalary2 * percent[key2].v3)+(currentSalary2 * percent[key2].v4)+(currentSalary2 * percent[key2].v5);
-  var three2 = Math.round(threeTmp2 + threeTmp2 * percent[key2].v6);
+  var threeTmp2 = one2 + (currentSalary2 * percent2[key2].v1)+(currentSalary2 * percent2[key2].v2)+(currentSalary2 * percent2[key2].v3)+(currentSalary2 * percent2[key2].v4)+(currentSalary2 * percent2[key2].v5);
+  var three2 = Math.round(threeTmp2 + threeTmp2 * percent2[key2].v6);
 
-  var four2 = Math.round(percent[key2].v7 * amountCoef2);
+  var four2 = Math.round(percent2[key2].v7 * amountCoef2 * amount2);
 
   var five2, six2;
   var one1002, two1002, three1002, four1002, five1002, six1002;
   if (tax2 == 1) {
-    five2 = Math.round((threeTmp2 + percent[key2].v7 * amountCoef2) * percent[key2].v10 + (threeTmp2 + percent[key2].v7 * amountCoef2) * percent[key2].v9 - percent[key2].v7* amountCoef2 * percent[key2].v8 - percent[key2].v7 * amountCoef2);
+    five2 = Math.round((threeTmp2 + percent2[key2].v7 * amountCoef2) * percent2[key2].v10 + (threeTmp2 + percent2[key2].v7 * amountCoef2) * percent2[key2].v9 - percent2[key2].v7* amountCoef2 * percent2[key2].v8 - percent2[key2].v7 * amountCoef2);
 
     six2 = Math.round((five2 / three2) * 100);
 
     one1002 = Math.round(currentSalary2);
-    two1002 = Math.round(threeTmp2 * percent[key2].v6 + percent[key2].v7* amountCoef2 * percent[key2].v8);
-    three1002 = Math.round(three2 + percent[key2].v7* amountCoef2 + percent[key2].v7* amountCoef2 * percent[key2].v8);
-    four1002 = Math.round(percent[key2].v7* amountCoef2 + percent[key2].v7* amountCoef2 * percent[key2].v8);
+    two1002 = Math.round(threeTmp2 * percent2[key2].v6 + percent2[key2].v7* amountCoef2 * percent2[key2].v8);
+    three1002 = Math.round(three2 + percent2[key2].v7* amountCoef2 + percent2[key2].v7* amountCoef2 * percent2[key2].v8);
+    four1002 = Math.round((percent2[key2].v7* amountCoef2 + percent2[key2].v7* amountCoef2 * percent2[key2].v8)*amount2);
     five1002 = five2;
     six1002 = six2;
 
   } else {
     five2 = 0;
 
-    six2 = Math.round(100 - ((three2 + four2) / (three2 + percent[key2].v11)) * 100);
+    six2 = Math.round(100 - ((three2 + four2 / amount2) / (three2 + percent2[key2].v11)) * 100);
 
-    one1002 = +currentSalary2 + currentSalary2 * percent[key2].v1;
-    two1002 = two2 + currentSalary2 * percent[key2].v1;
-    three1002 = three2 + percent[key2].v7* amountCoef2;
-    four1002 = percent[key2].v7* amountCoef2;
+    one1002 = +currentSalary2 + currentSalary2 * percent2[key2].v1;
+    two1002 = two2 + currentSalary2 * percent2[key2].v1;
+    three1002 = three2 + percent2[key2].v7* amountCoef2;
+    four1002 = percent2[key2].v7* amountCoef2*amount2;
     five1002 = 1;
     six1002 = six2;
 
@@ -1039,6 +1222,7 @@ function calculatePercent2() {
   }
   onePercent2 = onePercent2.toFixed(2);
   $('#one-sum2').text(one2);
+  circle12.set(0);
   circle12.animate(onePercent2);
 
   var twoPercent2;
@@ -1049,6 +1233,7 @@ function calculatePercent2() {
   }
   twoPercent2 = twoPercent2.toFixed(2);
   $('#two-sum2').text(two2);
+  circle22.set(0);
   circle22.animate(twoPercent2);
 
   var threePercent2;
@@ -1059,6 +1244,7 @@ function calculatePercent2() {
   }
   threePercent2 = threePercent2.toFixed(2);
   $('#three-sum2').text(three2);
+  circle32.set(0);
   circle32.animate(threePercent2);
 
   var fourPercent2;
@@ -1069,6 +1255,7 @@ function calculatePercent2() {
   }
   fourPercent2 = fourPercent2.toFixed(2);
   $('#four-sum2').text(four2);
+  line12.set(0);
   line12.animate(fourPercent2);
 
   var fivePercent2;
@@ -1079,6 +1266,7 @@ function calculatePercent2() {
   }
   fivePercent2 = fivePercent2.toFixed(2);
   $('#five-sum2').text(five2);
+  line22.set(0);
   line22.animate(fivePercent2);
 
   var sixPercent2;
@@ -1089,6 +1277,7 @@ function calculatePercent2() {
   }
   sixPercent2 = sixPercent2.toFixed(2);
   $('#six-sum2').text(six2);
+  line32.set(0);
   line32.animate(sixPercent2);
 
 }
@@ -1097,7 +1286,7 @@ var circle1 = new ProgressBar.Circle('#progress1', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
-  duration: 3000,
+  duration: 1000,
   easing: 'easeInOut',
   text: {
     value: 'руб'
@@ -1107,7 +1296,7 @@ var circle12 = new ProgressBar.Circle('#progress12', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
-  duration: 3000,
+  duration: 1000,
   easing: 'easeInOut',
   text: {
     value: 'руб'
@@ -1117,7 +1306,7 @@ var circle2 = new ProgressBar.Circle('#progress2', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
-  duration: 3000,
+  duration: 1000,
   easing: 'easeInOut',
   text: {
     value: 'руб'
@@ -1127,7 +1316,7 @@ var circle22 = new ProgressBar.Circle('#progress22', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
-  duration: 3000,
+  duration: 1000,
   easing: 'easeInOut',
   text: {
     value: 'руб'
@@ -1137,7 +1326,7 @@ var circle3 = new ProgressBar.Circle('#progress3', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
-  duration: 3000,
+  duration: 1000,
   easing: 'easeInOut',
   text: {
     value: 'руб'
@@ -1147,7 +1336,7 @@ var circle32 = new ProgressBar.Circle('#progress32', {
   strokeWidth: 4,
   color: '#e72530',
   trailColor: '#fff',
-  duration: 3000,
+  duration: 1000,
   easing: 'easeInOut',
   text: {
     value: 'руб'
@@ -1156,7 +1345,7 @@ var circle32 = new ProgressBar.Circle('#progress32', {
 var line1 = new ProgressBar.Line('#progress4', {
   strokeWidth: 4,
   easing: 'easeInOut',
-  duration: 1400,
+  duration: 1000,
   color: '#e72530',
   trailColor: '#fff',
   trailWidth: 4,
@@ -1165,7 +1354,7 @@ var line1 = new ProgressBar.Line('#progress4', {
 var line12 = new ProgressBar.Line('#progress42', {
   strokeWidth: 4,
   easing: 'easeInOut',
-  duration: 1400,
+  duration: 1000,
   color: '#e72530',
   trailColor: '#fff',
   trailWidth: 4,
@@ -1174,7 +1363,7 @@ var line12 = new ProgressBar.Line('#progress42', {
 var line2 = new ProgressBar.Line('#progress5', {
   strokeWidth: 4,
   easing: 'easeInOut',
-  duration: 1400,
+  duration: 1000,
   color: '#e72530',
   trailColor: '#fff',
   trailWidth: 4,
@@ -1183,7 +1372,7 @@ var line2 = new ProgressBar.Line('#progress5', {
 var line22 = new ProgressBar.Line('#progress52', {
   strokeWidth: 4,
   easing: 'easeInOut',
-  duration: 1400,
+  duration: 1000,
   color: '#e72530',
   trailColor: '#fff',
   trailWidth: 4,
@@ -1192,7 +1381,7 @@ var line22 = new ProgressBar.Line('#progress52', {
 var line3 = new ProgressBar.Line('#progress6', {
   strokeWidth: 4,
   easing: 'easeInOut',
-  duration: 1400,
+  duration: 1000,
   color: '#e72530',
   trailColor: '#fff',
   trailWidth: 4,
@@ -1201,7 +1390,7 @@ var line3 = new ProgressBar.Line('#progress6', {
 var line32 = new ProgressBar.Line('#progress62', {
   strokeWidth: 4,
   easing: 'easeInOut',
-  duration: 1400,
+  duration: 1000,
   color: '#e72530',
   trailColor: '#fff',
   trailWidth: 4,
